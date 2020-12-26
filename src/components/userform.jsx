@@ -10,6 +10,7 @@ import Success from "./successmessage";
 class UserForm extends Component {
   state = {
     step: 1,
+    gender:"",
     firstName: "",
     lastName: "",
     email: "",
@@ -39,8 +40,8 @@ class UserForm extends Component {
   };
   render() {
     const { step } = this.state;
-    const { firstName, lastName, email, occupation, city, bio } = this.state;
-    const values = { firstName, lastName, email, occupation, city, bio };
+    const { gender, firstName, lastName, email, occupation, city, bio } = this.state;
+    const values = { gender, firstName, lastName, email, occupation, city, bio };
 
     switch (step) {
       case 1:

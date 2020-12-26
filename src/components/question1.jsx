@@ -19,9 +19,9 @@ class Question1 extends Component {
       <MuiThemeProvider>
         <React.Fragment>
           <h1 className="question">What is your Gender?</h1>
-            <RadioGroup row name="gender" value={values} onChange={handleChange}>
-              <FormControlLabel value="male" control={<Radio />} label="Male" />
-              <FormControlLabel value="Female" control={<Radio />} label="Female" />
+            <RadioGroup row name="gender" defaultValue={values.gender} onChange={handleChange}>
+              <FormControlLabel value="male" control={<Radio />} label="Male" onChange={handleChange("gender")} />
+              <FormControlLabel value="Female" control={<Radio />} label="Female" onChange={handleChange("gender")}/>
             </RadioGroup>
           <br />
           <RaisedButton
