@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import FormUserDetails from "./userdetails";
 import Question1 from "./question1";
-
 import FormPersonalDetails from "./personaldetails";
 import Confirm from "./confirmDetails";
 import Success from "./successmessage";
