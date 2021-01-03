@@ -15,7 +15,7 @@ db.collection('players').get().then((snapshot) =>{
 
 
 })
-const dataList = document.querySelector('#build_list');
+// const dataList = document.querySelector('#build_list');
 
 function renderPlayerData(doc){
 
@@ -28,8 +28,10 @@ function renderPlayerData(doc){
 }
 
 // Submit to Firestore
+function handleSubmit (){
 
-const form = document.querySelector('#firebase_submit');
+let form = document.querySelector('#firebase_submit');
+
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log('submitted ' + form.name.value)
@@ -37,6 +39,9 @@ const form = document.querySelector('#firebase_submit');
       name: form.name.value,
     })
   })
+}
+
+
 
 
 
@@ -48,7 +53,7 @@ const SecondPage = () => (
     <p>Welcome to page 2</p>
     <form id="firebase_submit">
     <input type="text" id="name" name="name"></input>
-    <input type="submit" value="Send Request"></input>
+    <input type="submit" value="Send Request" onClick={handleSubmit}></input>
     </form>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
