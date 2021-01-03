@@ -28,17 +28,14 @@ function renderPlayerData(doc){
 }
 
 // Submit to Firestore
-function handleSubmit (){
-
-let form = document.querySelector('#firebase_submit');
-
-  form.addEventListener('submit', (e) => {
+function handleSubmit (e){
+  
+    let form = document.querySelector('#firebase_submit');
     e.preventDefault();
     console.log('submitted ' + form.name.value)
     db.collection('players').add({
       name: form.name.value,
     })
-  })
 }
 
 
