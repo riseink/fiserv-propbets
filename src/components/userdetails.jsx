@@ -20,7 +20,8 @@ class FormUserDetails extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <AppBar title="Enter User Details" style={{ background: '#f60' }} />
+        <h3 className="question">Player Information</h3>
+
           <TextField
             hintText="Enter your First Name"
             floatingLabelText="First Name"

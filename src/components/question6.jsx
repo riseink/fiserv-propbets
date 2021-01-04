@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 
-class Question1 extends Component {
+class Question6 extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -21,16 +21,15 @@ class Question1 extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <h3 className="question">How long will it take to sing the national anthem?</h3>
-            <RadioGroup row 
-                        name="question1"
-                        id="question1" 
-                        value={values.question1} 
-                        onChange={handleChange}>
-              <FormControlLabel value="Over 2:00" control={<Radio />} label="Over 2:00" onChange={handleChange("question1")} />
-              <FormControlLabel value="Under 2:00" control={<Radio />} label="Under 2:00" onChange={handleChange("question1")}/>
-            </RadioGroup>
-          <br />
+          <h3 className="question">First commercial spot after the 1st quarter will feature what brand?</h3>
+          <TextField
+            hintText="Please write in your answer"
+            floatingLabelText="Please write in your answer"
+            onChange={handleChange("question6")}
+            value={values.question6}
+            id="question6"
+            name="question6"
+          />
           <RaisedButton
             label="Continue"
             primary={true}
@@ -57,4 +56,4 @@ const styles = {
   }
 };
 
-export default Question1;
+export default Question6;

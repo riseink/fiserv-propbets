@@ -5,7 +5,7 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RaisedButton from "material-ui/RaisedButton";
 
-class Question1 extends Component {
+class Question9 extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -21,14 +21,14 @@ class Question1 extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <h3 className="question">How long will it take to sing the national anthem?</h3>
+          <h3 className="question">Will the president be referenced by the broadcasters at any point?</h3>
             <RadioGroup row 
-                        name="question1"
-                        id="question1" 
-                        value={values.question1} 
+                        name="question9"
+                        id="question9" 
+                        value={values.question9} 
                         onChange={handleChange}>
-              <FormControlLabel value="Over 2:00" control={<Radio />} label="Over 2:00" onChange={handleChange("question1")} />
-              <FormControlLabel value="Under 2:00" control={<Radio />} label="Under 2:00" onChange={handleChange("question1")}/>
+              <FormControlLabel value="Yes" control={<Radio />} label="Yes" onChange={handleChange("question9")} />
+              <FormControlLabel value="No" control={<Radio />} label="No" onChange={handleChange("question9")}/>
             </RadioGroup>
           <br />
           <RaisedButton
@@ -57,4 +57,4 @@ const styles = {
   }
 };
 
-export default Question1;
+export default Question9;
