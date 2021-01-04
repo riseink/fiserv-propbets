@@ -16,10 +16,14 @@ class Question1 extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <h1 className="question">What is your Gender?</h1>
-            <RadioGroup row name="gender" defaultValue={values.gender} onChange={handleChange}>
-              <FormControlLabel value="male" control={<Radio />} label="Male" onChange={handleChange("gender")} />
-              <FormControlLabel value="Female" control={<Radio />} label="Female" onChange={handleChange("gender")}/>
+          <h1 className="question">Who Will Win</h1>
+            <RadioGroup row 
+                        name="question1"
+                        id="question1" 
+                        value={values.question1} 
+                        onChange={handleChange}>
+              <FormControlLabel value="NFC" control={<Radio />} label="NFC" onChange={handleChange("question1")} />
+              <FormControlLabel value="AFC" control={<Radio />} label="AFC" onChange={handleChange("question1")}/>
             </RadioGroup>
           <br />
           <RaisedButton
@@ -27,6 +31,14 @@ class Question1 extends Component {
             primary={true}
             style={styles.button}
             onClick={this.continue}
+          />
+
+          <br />
+          <RaisedButton
+            label="Back"
+            primary={false}
+            style={styles.button}
+            onClick={this.back}
           />
         </React.Fragment>
       </MuiThemeProvider>

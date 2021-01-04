@@ -6,6 +6,7 @@ import RaisedButton from "material-ui/RaisedButton";
 
 class FormUserDetails extends Component {
   continue = e => {
+    const epassword =
     e.preventDefault();
     this.props.nextStep();
   };
@@ -24,29 +25,38 @@ class FormUserDetails extends Component {
             hintText="Enter your First Name"
             floatingLabelText="First Name"
             onChange={handleChange("firstName")}
-            defaultValue={values.firstName}
+            value={values.firstName}
+            id="firstName"
+            name="firstName"
           />
           <br />
           <TextField
             hintText="Enter your Last Name"
             floatingLabelText="Last Name"
             onChange={handleChange("lastName")}
-            defaultValue={values.lastName}
+            value={values.lastName}
+            id="lastName"
+            name="lastName"
           />
           <br />
           <TextField
             hintText="Enter your Email"
             floatingLabelText="Email"
             onChange={handleChange("email")}
-            defaultValue={values.email}
+            value={values.email}
+            id="email"
+            name="email"
           />
-          <br />
-          <RaisedButton
-            label="Back"
-            primary={false}
-            style={styles.button}
-            onClick={this.back}
+
+          <TextField
+            hintText="Enter your Email"
+            floatingLabelText="Email"
+            onChange={handleChange("email")}
+            value={values.email}
+            id="email"
+            name="email"
           />
+
           <RaisedButton
             label="Continue"
             primary={true}
