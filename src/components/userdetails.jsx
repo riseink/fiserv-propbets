@@ -48,15 +48,6 @@ class FormUserDetails extends Component {
             name="email"
           />
 
-          <TextField
-            hintText="Enter your Email"
-            floatingLabelText="Email"
-            onChange={handleChange("email")}
-            value={values.email}
-            id="email"
-            name="email"
-          />
-
           <RaisedButton
             label="Continue"
             primary={true}

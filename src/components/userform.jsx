@@ -33,6 +33,7 @@ class UserForm extends Component {
         player_last_name: this.state.lastName,
         player_email: this.state.email,
         question1: this.state.question1,
+        score:"",
       });
 
     this.setState({
