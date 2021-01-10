@@ -663,6 +663,15 @@ h1.question{
 
 }
 
+.alt_nav{
+  width:100%;
+  justify-content: space-between;
+  align-items: center;
+  background:#f60;
+  padding:20px 0;
+  display:flex;
+}
+
 .logo{
   width:18vw;
   max-width:345px;
@@ -774,4 +783,9 @@ display:inline-block;
 }
 .bets_copy p{
   color:#fff;
+}
+
+.active a{
+  color:#f60;
+
 }
