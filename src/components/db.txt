@@ -1,0 +1,9 @@
+import firebase from "../components/firebase"
+
+const db = firebase.firestore();
+
+db.collection('players').get().then(snapshot => {
+  snapshot.docs.forEach(doc => {
+      console.log(doc.data())
+    })
+})
