@@ -12,7 +12,7 @@ db.collection('players').get().then(snapshot => {
     })
 })
 
-const IndexPage = () => (
+const HomePage = () => (
   <Layout>
     <SEO title="Page two" />
     <h1>Fiserv Prop Bets</h1>
@@ -20,4 +20,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default HomePage

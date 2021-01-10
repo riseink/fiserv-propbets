@@ -1,21 +1,49 @@
-import React from "react";
+import React from "react"
 import { Link } from "gatsby"
-import UserForm from '../components/userform'
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import TextField from "material-ui/TextField";
 
+// import Layout from "../components/layout"
+import WelcomeImage from "../components/welcome_image"
+// import SEO from "../components/seo"
+
+function gateKeeper (event){
+  let detectInput = document.querySelector('#input');
+  if (detectInput.value === '123') {
+  console.log("true" + detectInput.value)
+  }
+  else{
+    event.preventDefault()
+    alert('wrong password, please contact administrator')
+
+  }
+}
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Page two" />
-    <h2>Overview </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <h4>Good Luck! Answer the following questions below: </h4>
+<div className="gateKeeper">
+    <div className="welcome_image">
+      <WelcomeImage />
+    </div>
+    <div className="chevron_container">
+      <div className="chevron chevron_left">
+        <img className="img_responsive" src="/chevron_left.jpg" />
+      </div>
+      <div className="chevron_input">
+      <div className="input_copy">enter invite code</div>
 
-    <UserForm />
-  </Layout>
+        <input id="input"></input>
+        <Link to="/home" onClick={gateKeeper}>Go</Link>
+      </div>
+
+      <div className=" chevron chevron_right">
+      <img className="img_responsive" src="/chevron_right.jpg" />
+
+      </div>
+
+    </div>
+
+</div>
 )
-
 
 
 export default IndexPage
