@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import AppBar from "material-ui/AppBar";
+// import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 
 class FormUserDetails extends Component {
   continue = e => {
-    const epassword =
+   
     e.preventDefault();
     this.props.nextStep();
   };

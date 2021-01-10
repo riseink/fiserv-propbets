@@ -197,7 +197,7 @@ class UserForm extends Component {
           );
         case 12:
           return (
-            <input type="submit" value="Send to Firebase" onClick={this.  handleSubmit}></input>
+            <input type="submit" value="Send to Firebase" onClick={this.handleSubmit}></input>
           );
       default:
         break;
