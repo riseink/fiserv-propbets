@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import WelcomeImage from "../components/welcome_image"
 
 function gateKeeper (event){
   let detectInput = document.querySelector('#input');
@@ -17,7 +16,8 @@ function gateKeeper (event){
 const IndexPage = () => (
 <div className="gateKeeper">
     <div className="welcome_image">
-      <WelcomeImage />
+    <img className="img_responsive" alt="chevron" src="/welcome_image.jpg" />
+
     </div>
     <div className="chevron_container">
       <div className="chevron chevron_left">
