@@ -1,11 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import TextField from "material-ui/TextField";
-
-// import Layout from "../components/layout"
 import WelcomeImage from "../components/welcome_image"
-// import SEO from "../components/seo"
 
 function gateKeeper (event){
   let detectInput = document.querySelector('#input');
@@ -26,7 +21,7 @@ const IndexPage = () => (
     </div>
     <div className="chevron_container">
       <div className="chevron chevron_left">
-        <img className="img_responsive" src="/chevron_left.jpg" />
+        <img className="img_responsive" alt="chevron" src="/chevron_left.jpg" />
       </div>
       <div className="chevron_input">
       <div className="input_copy">enter invite code</div>
@@ -36,7 +31,7 @@ const IndexPage = () => (
       </div>
 
       <div className=" chevron chevron_right">
-      <img className="img_responsive" src="/chevron_right.jpg" />
+      <img className="img_responsive" alt="chevron" src="/chevron_right.jpg" />
 
       </div>
 

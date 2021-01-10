@@ -8,7 +8,7 @@ const db = firebase.firestore();
 
 db.collection('players').get().then(snapshot => {
   snapshot.docs.forEach(doc => {
-      const Allplayers = doc.data();
+      console.log(doc.data())
     })
 })
 
