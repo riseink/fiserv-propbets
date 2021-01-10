@@ -118,7 +118,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -619,7 +618,6 @@ h1.question{
 .img_responsive{
   width:100%;
   height:auto;
-  vertical-align: bottom;
 }
 
 .chevron_input {
@@ -653,4 +651,127 @@ h1.question{
   text-decoration: none;
 
 
+}
+
+.fixed_nav{
+  position:fixed;
+  display:flex;
+  width:100%;
+  top:20px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo{
+  width:18vw;
+  max-width:345px;
+  margin-left:4.1666666666667%;
+  height:auto;
+}
+.hero_logo{
+  width:40vw;
+  margin:0 auto;
+  padding-top:30vh;
+}
+
+
+
+
+.nav_links{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+width:60vw;
+height:65px;
+display:inline-block;
+
+}
+.nav_links ul{
+  text-align: end;
+  margin:0;
+}
+.nav_links li{
+  list-style:none;
+  display:inline-block;
+  padding: 0 20px;
+
+}
+
+.nav_links a{
+  color:#fff;
+  font-family:'Arial', sans-serif;
+  line-height:65px;
+  font-size:1.25vw;
+  text-decoration: none;
+  text-transform:uppercase;
+
+}
+.intro_section{
+  background: url('/../../black_and_white_football.jpg');
+  background-size:cover;
+  width:100%;
+  height:90vh;
+  background-position: bottom;
+
+}
+.overview_section{
+  background: url('/../../overview_bg.jpg');
+  background-size:cover;
+  width:100%;
+  height:90vh;
+  background-position: bottom;
+}
+
+.copy_container{
+  width:50vw;
+  margin:0 auto 0 auto;
+  text-align:center;
+  padding-top:10vh;
+}
+
+.gameplay_section{
+  background: url('/../../game_play_bg.jpg');
+  background-size:cover;
+  width:100%;
+  height:90vh;
+  background-position: bottom;
+  display:flex;
+  justify-content: space-evenly;
+  align-items:center;
+
+}
+
+.gameplay_item{
+  width:40%;
+}
+
+.place_bets_section{
+  background: url('/../../place_bets_bg.jpg');
+  background-size:cover;
+  width:100%;
+  height:90vh;
+  background-position: bottom;
+
+}
+
+.button_container{
+  width:25%;
+  max-width: 500px;
+  margin:0 auto;
+}
+
+.bets_copy{
+  width:50vw;
+  margin:0 auto 0 auto;
+  text-align:center;
+  padding:20vh 0 10vh 0;
+}
+.bets_copy h2{
+  color:#f60;
+}
+.bets_copy p{
+  color:#fff;
 }

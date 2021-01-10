@@ -8,7 +8,7 @@ function gateKeeper (event){
   }
   else{
     event.preventDefault()
-    alert('wrong password, please contact administrator')
+    alert('wrong Ac, please contact administrator')
 
   }
 }

@@ -3,30 +3,46 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#f60`,
-      marginBottom: `1.45rem`,
-    }}
+  <header className="fixed_nav"
+    
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
+
+
+          <div className="logo">
+          <Link
           to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
+          <img className="img_responsive" alt="chevron" src="/nav_logo.png" />
+          </Link>
+          </div>
+       
+
+    <div className="nav_links">
+      <ul>
+        <li>
+        <Link
+          to="#overview">overview</Link>
+        </li>
+
+        <li>
+        <Link
+          to="#gameplay">gameplay</Link>
+        </li>
+
+        <li>
+        <Link
+          to="#place_bets">place bets</Link>
+        </li>
+
+        <li>
+        <Link
+          to="/leaderboard">leaderboard</Link>
+        </li>
+      </ul>
     </div>
   </header>
 )
