@@ -2,6 +2,14 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+function handleActive (event) {
+
+  // event.preventDefault()
+  // let detectActive = document.querySelectorAll('.nav_links a');
+  // for (let i = 0; i < detectActive.length; ++i) {
+  //   detectActive[i].classList.remove("active");
+  // }
+};
 const Header = ({ siteTitle }) => (
   <header className="fixed_nav"
     
@@ -25,17 +33,17 @@ const Header = ({ siteTitle }) => (
       <ul>
         <li>
         <Link
-          to="#overview">overview</Link>
+          to="#overview" onClick={handleActive}>overview</Link>
         </li>
 
         <li>
         <Link
-          to="#gameplay">gameplay</Link>
+          to="#gameplay" onClick={handleActive}>gameplay</Link>
         </li>
 
         <li>
         <Link
-          to="#place_bets">place bets</Link>
+          to="#place_bets" onClick={handleActive}>place bets</Link>
         </li>
 
         <li>

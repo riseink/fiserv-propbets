@@ -8,7 +8,7 @@ function gateKeeper (event){
   }
   else{
     event.preventDefault()
-    alert('wrong Ac, please contact administrator')
+    alert('Wrong Invite Code, please contact Administrator')
 
   }
 }
@@ -21,7 +21,6 @@ const IndexPage = () => (
     </div>
     <div className="chevron_container">
       <div className="chevron chevron_left">
-        <img className="img_responsive" alt="chevron" src="/chevron_left.jpg" />
       </div>
       <div className="chevron_input">
       <div className="input_copy">enter invite code</div>
@@ -31,7 +30,6 @@ const IndexPage = () => (
       </div>
 
       <div className=" chevron chevron_right">
-      <img className="img_responsive" alt="chevron" src="/chevron_right.jpg" />
 
       </div>
 
