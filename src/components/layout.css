@@ -810,3 +810,77 @@ display:inline-block;
   color:#f60;
 
 }
+
+
+
+/* Table CSS */
+.body_table{
+  background: url('/../../black_and_white_football.jpg');
+  background-size:cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height:100vh;
+
+}
+.table-wrapper{
+  margin: 40px;
+  background:rgba(0,0,0,0.65);
+}
+
+.fl-table {
+  border-spacing: 20px 0;
+  border-collapse: initial!important;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  color:white;
+}
+
+.fl-table td, .fl-table th {
+  text-align: left;
+  padding: 8px;
+}
+
+.fl-table td {
+  /* border-right: 1px solid #f8f8f8; */
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: orange;
+  border-top:1px solid black;
+  border-bottom:1px solid orange;
+  border-left:1px solid black;
+  border-right:1px solid black;
+  
+}
+
+
+/* .fl-table thead th:nth-child(odd) {
+  border-top:1px solid black;
+  border-bottom:1px solid orange;
+  border-left:1px solid black;
+  border-right:1px solid black;
+
+
+}
+
+.fl-table tr:nth-child(even) {
+  border-top:1px solid black;
+  border-bottom:1px solid orange;
+  border-left:1px solid black;
+  border-right:1px solid black;
+} */
+tbody td{
+  border-left:1px solid orange;
+  border-right:1px solid orange;
+}
+
+tbody tr:last-child td{
+  border-bottom:1px solid orange;
+}
+
+tbody tr:nth-child(odd){
+  background:gray;
+}
+
