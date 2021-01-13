@@ -40,7 +40,7 @@ const HeaderAlt = ({ siteTitle }) => (
 
         <li>
         <Link
-          to="/home/leaderboard">leaderboard</Link>
+          to="/leaderboard">leaderboard</Link>
         </li>
       </ul>
     </div>
