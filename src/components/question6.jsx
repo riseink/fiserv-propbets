@@ -21,29 +21,41 @@ class Question6 extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <h3 className="question">First commercial spot after the 1st quarter will feature what brand?</h3>
-          <TextField
-            hintText="Please write in your answer"
-            floatingLabelText="Please write in your answer"
-            onChange={handleChange("question6")}
-            value={values.question6}
-            id="question6"
-            name="question6"
-          />
-          <RaisedButton
-            label="Continue"
-            primary={true}
-            style={styles.button}
-            onClick={this.continue}
-          />
+          <div className="question_wrapper">
+            <div className="question_chevron">
+              <a onClick={this.back}><img src='question_chevron_back.png'></img></a>
+            </div>
+            <div className="question_container">
+              <h3 className="question">First commercial spot after the 1st quarter will feature what brand?</h3>
+              <TextField
+                hintText="Please write in your answer"
+                floatingLabelText="Please write in your answer"
+                onChange={handleChange("question6")}
+                value={values.question6}
+                id="question6"
+                name="question6"
+              />
+              <br />
+              <RaisedButton
+                label="Continue"
+                primary={true}
+                style={styles.button}
+                onClick={this.continue}
+              />
 
-          <br />
-          <RaisedButton
-            label="Back"
-            primary={false}
-            style={styles.button}
-            onClick={this.back}
-          />
+              
+              <RaisedButton
+                label="Back"
+                primary={false}
+                style={styles.button}
+                onClick={this.back}
+              />
+            </div>
+            <div className="question_chevron">
+              <a onClick={this.continue}><img src='question_chevron_forward.png'></img></a>
+            </div>
+
+          </div>
         </React.Fragment>
       </MuiThemeProvider>
     );
@@ -52,7 +64,8 @@ class Question6 extends Component {
 
 const styles = {
   button: {
-    margin: 15
+    marginTop: 15,
+    marginRight:15,
   }
 };
 

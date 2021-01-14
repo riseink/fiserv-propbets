@@ -29,7 +29,7 @@ class Ledger extends React.Component {
 
       <div className="table-wrapper">
         <Helmet>
-          <body class='body_table' />
+          <body class='body_ledger' />
         </Helmet>
         <table className="fl-table" cellSpacing="0 20px">
           <thead>

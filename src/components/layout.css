@@ -813,18 +813,45 @@ display:inline-block;
 
 
 /* Table CSS */
-.body_table{
+.body_ledger{
   background: url('/../../black_and_white_football.jpg');
   background-size:cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  height:100vh;
   font-family: 'Arial';
-
 }
+
+.body_leaderboard{
+  background: url('/../../leaderboard_bg.jpg');
+  background-size:cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  font-family: 'Arial';
+}
+
+.body_ledger .fl-table{
+  /* max-width:calc(100vw - 80px);
+  overflow-x: scroll;
+  display: inline-block; */
+  position:relative;
+}
+
+.body_ledger .fl-table td{
+  font-size: 14px;
+}
+
+.body_ledger .fl-table tr td:first-child,
+.body_ledger .fl-table tr th:first-child{
+ position: sticky;
+ left:0;
+ background:black;
+ border-bottom:1px solid #f60;
+}
+
+
+
 .table-wrapper{
   margin: 40px;
-  background:rgba(0,0,0,0.65);
 }
 
 .fl-table {
@@ -837,42 +864,26 @@ display:inline-block;
 }
 
 .fl-table td, .fl-table th {
-  text-align: left;
   padding: 8px;
+  font-size: 24px;
+  text-align:center;
+  font-weight: 300;
+  font-family:'Roboto', sans-serif;
+
 }
 
-.fl-table td {
-  /* border-right: 1px solid #f8f8f8; */
-  font-size: 12px;
-}
 
 .fl-table thead th {
   color: #f60;
-  font-family:'Roboto', sans-serif;
   font-weight:400;
   border-top:1px solid black;
   border-bottom:1px solid #f60;
   border-left:1px solid black;
   border-right:1px solid black;
+  text-align: center;
   
 }
 
-
-/* .fl-table thead th:nth-child(odd) {
-  border-top:1px solid black;
-  border-bottom:1px solid #f60;
-  border-left:1px solid black;
-  border-right:1px solid black;
-
-
-}
-
-.fl-table tr:nth-child(even) {
-  border-top:1px solid black;
-  border-bottom:1px solid #f60;
-  border-left:1px solid black;
-  border-right:1px solid black;
-} */
 tbody td{
   border-left:1px solid #f60;
   border-right:1px solid #f60;
@@ -886,3 +897,55 @@ tbody tr:nth-child(odd){
   background:#414042;
 }
 
+span.rank_span {
+  width: 30px;
+  text-align: center;
+  border-right: 1px solid #f60;
+  display: inline-block;
+  padding-right:8px;
+
+}
+
+span.team_span {
+  text-align: center;
+  display: inline-block;
+  width: calc(100% - 39px);
+}
+
+.hof_logo{
+  width:20%;
+  margin:10vh auto 0 auto;
+  min-width:250px;
+}
+
+.leaderboard_copy{
+  width:50vw;
+  margin:0 auto 0 auto;
+  text-align:center;
+  padding:40px 0 40px 0;
+}
+.leaderboard_copy h2{
+  color:#f60;
+  font-weight: 300;
+  font-family:'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+.leaderboard_copy p{
+  color:#fff;
+}
+
+h3.question{
+  width:30vw;
+}
+
+.question_wrapper{
+  display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.question_container{
+  padding: 0 50px;
+  display:inline-block;
+}

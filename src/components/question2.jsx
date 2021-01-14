@@ -21,30 +21,41 @@ class Question2 extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <h3 className="question">Length of the word "Brave" during the anthem?</h3>
-            <RadioGroup row 
-                        name="question2"
-                        id="question2" 
-                        value={values.question2} 
-                        onChange={handleChange}>
-              <FormControlLabel value="Over 5 Seconds" control={<Radio />} label="Over 5 Seconds" onChange={handleChange("question2")} />
-              <FormControlLabel value="Under 5 Seconds" control={<Radio />} label="Under 5 Seconds" onChange={handleChange("question2")}/>
-            </RadioGroup>
-          <br />
-          <RaisedButton
-            label="Continue"
-            primary={true}
-            style={styles.button}
-            onClick={this.continue}
-          />
+          <div className="question_wrapper">
+            <div className="question_chevron">
+              <a onClick={this.back}><img src='question_chevron_back.png'></img></a>
+            </div>
+            <div className="question_container">
+              <h3 className="question">Length of the word "Brave" during the anthem?</h3>
+              <RadioGroup row
+                name="question2"
+                id="question2"
+                value={values.question2}
+                onChange={handleChange}>
+                <FormControlLabel value="Over 5 Seconds" control={<Radio />} label="Over 5 Seconds" onChange={handleChange("question2")} />
+                <FormControlLabel value="Under 5 Seconds" control={<Radio />} label="Under 5 Seconds" onChange={handleChange("question2")} />
+              </RadioGroup>
+              <br />
+              <RaisedButton
+                label="Continue"
+                primary={true}
+                style={styles.button}
+                onClick={this.continue}
+              />
 
-          <br />
-          <RaisedButton
-            label="Back"
-            primary={false}
-            style={styles.button}
-            onClick={this.back}
-          />
+              
+              <RaisedButton
+                label="Back"
+                primary={false}
+                style={styles.button}
+                onClick={this.back}
+              />
+            </div>
+            <div className="question_chevron">
+              <a onClick={this.continue}><img src='question_chevron_forward.png'></img></a>
+            </div>
+
+          </div>
         </React.Fragment>
       </MuiThemeProvider>
     );

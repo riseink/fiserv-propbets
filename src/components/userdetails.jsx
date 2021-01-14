@@ -6,7 +6,7 @@ import RaisedButton from "material-ui/RaisedButton";
 
 class FormUserDetails extends Component {
   continue = e => {
-   
+
     e.preventDefault();
     this.props.nextStep();
   };
@@ -20,41 +20,46 @@ class FormUserDetails extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-        <h3 className="question">Player Information</h3>
+          <div className="question_wrapper">
 
-          <TextField
-            hintText="Enter your First Name"
-            floatingLabelText="First Name"
-            onChange={handleChange("firstName")}
-            value={values.firstName}
-            id="firstName"
-            name="firstName"
-          />
-          <br />
-          <TextField
-            hintText="Enter your Last Name"
-            floatingLabelText="Last Name"
-            onChange={handleChange("lastName")}
-            value={values.lastName}
-            id="lastName"
-            name="lastName"
-          />
-          <br />
-          <TextField
-            hintText="Enter your Email"
-            floatingLabelText="Email"
-            onChange={handleChange("email")}
-            value={values.email}
-            id="email"
-            name="email"
-          />
+            <div className="question_container">
+              <h3 className="question">Player Information</h3>
 
-          <RaisedButton
-            label="Continue"
-            primary={true}
-            style={styles.button}
-            onClick={this.continue}
-          />
+              <TextField
+                hintText="Enter your First Name"
+                floatingLabelText="First Name"
+                onChange={handleChange("firstName")}
+                value={values.firstName}
+                id="firstName"
+                name="firstName"
+              />
+              <br />
+              <TextField
+                hintText="Enter your Last Name"
+                floatingLabelText="Last Name"
+                onChange={handleChange("lastName")}
+                value={values.lastName}
+                id="lastName"
+                name="lastName"
+              />
+              <br />
+              <TextField
+                hintText="Enter your Email"
+                floatingLabelText="Email"
+                onChange={handleChange("email")}
+                value={values.email}
+                id="email"
+                name="email"
+              />
+              <br />
+              <RaisedButton
+                label="Continue"
+                primary={true}
+                style={styles.button}
+                onClick={this.continue}
+              />
+            </div>
+          </div>
         </React.Fragment>
       </MuiThemeProvider>
     );
@@ -63,7 +68,7 @@ class FormUserDetails extends Component {
 
 const styles = {
   button: {
-    margin: 15
+    marginTop: 15
   }
 };
 
