@@ -1,0 +1,103 @@
+import React from "react";
+import firebase from "../components/firebase";
+import Helmet from 'react-helmet'
+import BootstrapTable from 'react-bootstrap-table-next';
+
+const db = firebase.firestore();
+
+class LeaderBoard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      players: [],
+    };
+  }
+
+  componentDidMount() {
+    db.collection("players")
+      .get()
+      .then((querySnapshot) => {
+        const data = querySnapshot.docs.map((doc) => doc.data());
+        console.log(data);
+        this.setState({ players: data });
+      });
+  }
+
+
+
+  render() {
+    const { players } = this.state;
+  
+    const leaderboardData = players.map(({ player }) => {
+      return {
+        playerInfo: player,
+        playerTeam: player.player_team_name,
+        playerHallofFame: player.player_hall_of_fame,
+        playerLocation: player.player_location,
+        playerTally: player.player_tally,
+        playerScore: player.score,
+        playerRank: player.rank
+      }
+    })
+
+    function playerFormatter(cell) {
+      return (
+        <span>{ cell.player_last_name }, { cell.player_first_name }
+        </span>
+      );
+    }
+
+    const leaderboardColumns = [{
+      dataField: 'playerRank',
+      text: 'Rank',
+      sort: true,
+      headerClasses: 'playerRank',
+    },{
+      dataField: 'playerTeam',
+      text: 'TEAM',
+      sort: true,
+      headerClasses: 'playerTeam',
+    },{
+      dataField: 'playerInfo',
+      text: 'Player',
+      sort: true,
+      formatter: playerFormatter,
+      headerClasses: 'playerInfo',
+  
+    },{
+      dataField: 'playerLocation',
+      text: 'Location',
+      sort: true,
+      headerClasses: 'playerLocation',
+    },{
+      dataField: 'playerHallofFame',
+      text: 'Hall of Fame',
+      sort: true,
+      headerClasses: 'playerHallofFame',
+    },{
+      dataField: 'playerTally',
+      text: 'Answers',
+      sort: true,
+      headerClasses: 'playerTally',
+    },{
+      dataField: 'playerScore',
+      text: 'Points',
+      sort: true,
+      headerClasses: 'playerScore',
+  
+    }]
+
+    return (
+
+      <div className="table-wrapper">
+        <Helmet>
+          <body class='body_table' />
+        </Helmet>
+        <BootstrapTable keyField='rank' data={ leaderboardData } columns={ leaderboardColumns } bodyClasses="fl-table"  />
+        </div>
+
+    );
+  }
+}
+
+export default LeaderBoard;

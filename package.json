@@ -11,6 +11,7 @@
     "formik": "^2.2.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-react-helmet": "^3.4.0",
@@ -20,6 +21,7 @@
     "material-ui": "^0.20.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-bootstrap-table-next": "^4.0.3",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.2.0"

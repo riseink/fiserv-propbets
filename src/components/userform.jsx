@@ -50,7 +50,12 @@ class UserForm extends Component {
         question8: this.state.question8,
         question9: this.state.question9,
         question10: this.state.question10,
-        score:"",
+        score:0,
+        rank:0,
+        player_team_name:"",
+        player_hall_of_fame:"",
+        player_location:"",
+        player_tally:"",
       });
 
     this.setState({
