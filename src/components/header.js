@@ -1,66 +1,96 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-function handleActive (event) {
 
-  // event.preventDefault()
-  // let detectActive = document.querySelectorAll('.nav_links a');
-  // for (let i = 0; i < detectActive.length; ++i) {
-  //   detectActive[i].classList.remove("active");
-  // }
+function activeOverview(event) {
+  let detectActive = document.querySelectorAll('.nav_links a');
+  detectActive[0].classList.add('active')
+  detectActive[1].classList.remove('active')
+  detectActive[2].classList.remove('active')
+
 };
-const Header = ({ siteTitle }) => (
-  <header className="fixed_nav"
-    
-  >
+
+function activeGameplay(event) {
+  let detectActive = document.querySelectorAll('.nav_links a');
+  detectActive[1].classList.add('active')
+  detectActive[0].classList.remove('active')
+  detectActive[2].classList.remove('active')
+};
+
+function activeBets(event) {
+  let detectActive = document.querySelectorAll('.nav_links a');
+  detectActive[2].classList.add('active')
+  detectActive[1].classList.remove('active')
+  detectActive[0].classList.remove('active')
+};
+
+function showMobileNav() {
+  console.log('hamburger')
+  let detectNav = document.querySelector('nav');
+  detectNav.classList.toggle('show')
+  let detectSelf = document.querySelector('.hamburger');
+  detectSelf.classList.toggle('is-active')
+
+}
 
 
-          <div className="logo">
-          <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          <img className="img_responsive" alt="chevron" src="/nav_logo.png" />
-          </Link>
-          </div>
-       
+const Header = () => (
 
-    <div className="nav_links">
-      <ul>
-        <li>
-        <Link
-          to="#overview" onClick={handleActive}>overview</Link>
-        </li>
+  <header className="fixed_nav" >
 
-        <li>
-        <Link
-          to="#gameplay" onClick={handleActive}>gameplay</Link>
-        </li>
 
-        <li>
-        <Link
-          to="#place_bets" onClick={handleActive}>place bets</Link>
-        </li>
+  <div className="logo" >
+  <Link to="/">
+  <img className="img_responsive"
+  alt="chevron"
+  src="/nav_logo.png" />
+  </Link>
+  </div>
 
-        <li>
-        <Link
-          to="/leaderboard">leaderboard</Link>
-        </li>
-      </ul>
-    </div>
-  </header>
+
+  <nav className="nav_links desktop_nav">
+
+  <ul>
+  <div className="hamburger_logo" >
+  <Link to = "/"
+   >
+  <img className="img_responsive"
+  alt="chevron"
+  src="/nav_logo.png" />
+  </Link> </div > 
+  <li >
+  <Link to = "#overview"
+  onClick = {
+      activeOverview
+  } > overview </Link> 
+  </li >
+
+  < li >
+  <Link to = "#gameplay"
+  onClick = {
+      activeGameplay
+  } > gameplay </Link> </li >
+
+  <li >
+  <Link to = "#place_bets"
+  onClick = {
+      activeBets
+  } > place bets </Link> </li >
+
+  <li >
+  <Link to = "/leaderboard" > leaderboard </Link> </li > </ul>
+
+  </nav>
+
+
+  <div className = "hamburger hamburger--squeeze"
+  onClick = {
+      showMobileNav
+  } >
+  <div className = "hamburger-box" >
+  <div className = "hamburger-inner" > 
+  </div> </div> </div> </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

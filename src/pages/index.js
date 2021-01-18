@@ -3,12 +3,14 @@ import { Link } from "gatsby"
 
 function gateKeeper (event){
   let detectInput = document.querySelector('#input');
-  if (detectInput.value === '123') {
-  console.log("true" + detectInput.value)
+  if (detectInput.value === '123' || 'ABC') {
+  console.log("FISERV_ACCESS_KEY " + detectInput.value)
+  localStorage.setItem('FISERV_ACCESS_KEY', detectInput.value);
+ 
   }
   else{
     event.preventDefault()
-    alert('Wrong Invite Code, please contact Administrator')
+    alert('Wrong Access Code, please contact Administrator')
 
   }
 }
