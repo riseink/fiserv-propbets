@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from 'react-helmet'
 
 function gateKeeper (event){
   let detectInput = document.querySelector('#input');
@@ -16,9 +17,13 @@ function gateKeeper (event){
 }
 
 const IndexPage = () => (
+  
 <div className="gateKeeper">
+<Helmet>
+          <body class='body_home' />
+</Helmet>
     <div className="welcome_image">
-    <img className="img_responsive" alt="chevron" src="/welcome_image.jpg" />
+    <img className="img_responsive" alt="chevron" src="/home_prop_bet_logo.png" />
 
     </div>
     <div className="chevron_container">
