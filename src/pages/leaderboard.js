@@ -5,7 +5,7 @@ import LayoutLeader from "../components/layout_leader"
 
 const db = firebase.firestore();
 
-class Ledger extends React.Component {
+class Leaderboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -53,7 +53,7 @@ class Ledger extends React.Component {
           <tbody>
             
               {players.map((player) => (
-                <tr>
+                <tr key={player.rank} >
                 <td><span className="rank_span">{player.rank}</span> <span className="team_span">{player.player_team_name}</span></td>
                 <td>{player.player_last_name}, {player.player_first_name}</td>
                 <td>{player.player_location}</td>
@@ -78,4 +78,4 @@ class Ledger extends React.Component {
   }
 }
 
-export default Ledger;
+export default Leaderboard;
