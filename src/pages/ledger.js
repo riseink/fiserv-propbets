@@ -28,11 +28,12 @@ class Ledger extends React.Component {
 
     return (
       <LayoutAlt>
-      <div className="table-wrapper">
+      <div className="ledger_table">
+      <div className="table-wrapper ">
         <Helmet>
           <body class='body_ledger' />
         </Helmet>
-        <table className="fl-table" cellSpacing="0 20px">
+        <table className="fl-table ">
           <thead>
             <tr>
               <th>Question</th>
@@ -107,6 +108,7 @@ class Ledger extends React.Component {
           </tbody>
 
         </table>
+      </div>
       </div>
       </LayoutAlt>
 
