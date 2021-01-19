@@ -1,41 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import PropTypes from "prop-types"
 
-function activeOverview(event) {
-  let detectActive = document.querySelectorAll('.nav_links a');
-  detectActive[1].classList.add('active')
-  detectActive[2].classList.remove('active')
-  detectActive[3].classList.remove('active')
-  let detectNav = document.querySelector('nav');
-  detectNav.classList.toggle('show')
-  let detectSelf = document.querySelector('.hamburger');
-  detectSelf.classList.toggle('is-active')
-
-};
-
-function activeGameplay(event) {
-  let detectActive = document.querySelectorAll('.nav_links a');
-  detectActive[2].classList.add('active')
-  detectActive[1].classList.remove('active')
-  detectActive[3].classList.remove('active')
-  let detectNav = document.querySelector('nav');
-  detectNav.classList.toggle('show')
-  let detectSelf = document.querySelector('.hamburger');
-  detectSelf.classList.toggle('is-active')
-};
-
-function activeBets(event) {
-  let detectActive = document.querySelectorAll('.nav_links a');
-  detectActive[3].classList.add('active')
-  detectActive[2].classList.remove('active')
-  detectActive[1].classList.remove('active')
-  let detectNav = document.querySelector('nav');
-  detectNav.classList.toggle('show')
-  let detectSelf = document.querySelector('.hamburger');
-  detectSelf.classList.toggle('is-active')
-
-};
 
 function showMobileNav() {
   console.log('hamburger')
@@ -48,7 +13,7 @@ function showMobileNav() {
 
 const HeaderAlt = () => (
 
-  <header className="fixed_nav" >
+  <header className="alt_nav" >
 
 
       <div className="logo" >
@@ -72,22 +37,16 @@ const HeaderAlt = () => (
                   </Link> </div >
               <li >
                   <Link to="/home/#overview"
-                      onClick={
-                          activeOverview
-                      } > overview </Link>
+                       > overview </Link>
               </li >
 
               < li >
                   <Link to="/home/#gameplay"
-                      onClick={
-                          activeGameplay
-                      } > gameplay </Link> </li >
+                       > gameplay </Link> </li >
 
               <li >
                   <Link to="/home/#place_bets"
-                      onClick={
-                          activeBets
-                      } > place bets </Link> </li >
+                       > place bets </Link> </li >
 
               <li >
                   <Link to="/leaderboard" > leaderboard </Link> </li > </ul>

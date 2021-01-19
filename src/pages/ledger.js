@@ -1,6 +1,7 @@
 import React from "react";
 import firebase from "../components/firebase";
 import Helmet from 'react-helmet'
+import LayoutAlt from "../components/layout_alt"
 
 const db = firebase.firestore();
 
@@ -26,7 +27,7 @@ class Ledger extends React.Component {
     const { players } = this.state;
 
     return (
-
+      <LayoutAlt>
       <div className="table-wrapper">
         <Helmet>
           <body class='body_ledger' />
@@ -107,6 +108,7 @@ class Ledger extends React.Component {
 
         </table>
       </div>
+      </LayoutAlt>
 
     );
   }

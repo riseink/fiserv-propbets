@@ -1,34 +1,9 @@
 import { Link } from "gatsby"
 import React from "react"
 
-function activeOverview(event) {
-  let detectActive = document.querySelectorAll('.nav_links a');
-  detectActive[1].classList.add('active')
-  detectActive[2].classList.remove('active')
-  detectActive[3].classList.remove('active')
-  let detectNav = document.querySelector('nav');
-  detectNav.classList.toggle('show')
-  let detectSelf = document.querySelector('.hamburger');
-  detectSelf.classList.toggle('is-active')
 
-};
+function nukeNav(event) {
 
-function activeGameplay(event) {
-  let detectActive = document.querySelectorAll('.nav_links a');
-  detectActive[2].classList.add('active')
-  detectActive[1].classList.remove('active')
-  detectActive[3].classList.remove('active')
-  let detectNav = document.querySelector('nav');
-  detectNav.classList.toggle('show')
-  let detectSelf = document.querySelector('.hamburger');
-  detectSelf.classList.toggle('is-active')
-};
-
-function activeBets(event) {
-  let detectActive = document.querySelectorAll('.nav_links a');
-  detectActive[3].classList.add('active')
-  detectActive[2].classList.remove('active')
-  detectActive[1].classList.remove('active')
   let detectNav = document.querySelector('nav');
   detectNav.classList.toggle('show')
   let detectSelf = document.querySelector('.hamburger');
@@ -70,26 +45,19 @@ const HeaderLeader = () => (
                           src="/nav_logo.png" />
                   </Link> </div >
               <li >
-                  <Link to="/home/#overview"
-                      onClick={
-                          activeOverview
-                      } > overview </Link>
+                  <Link to="/home/#overview"> overview </Link>
               </li >
 
               < li >
-                  <Link to="/home/#gameplay"
-                      onClick={
-                          activeGameplay
-                      } > gameplay </Link> </li >
+                  <Link to="/home/#gameplay"> gameplay </Link> </li >
 
               <li >
-                  <Link to="/home/#place_bets"
-                      onClick={
-                          activeBets
-                      } > place bets </Link> </li >
+                  <Link to="/home/#place_bets"> place bets </Link> </li >
 
               <li >
-                  <Link to="#" > leaderboard </Link> </li > </ul>
+                  <Link className="active" to="#" onClick={
+                          nukeNav
+                      } > leaderboard </Link> </li > </ul>
 
       </nav>
 
