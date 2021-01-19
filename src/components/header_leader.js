@@ -1,58 +1,107 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const HeaderLeader = ({ siteTitle }) => (
-  <header className="alt_nav"
+function activeOverview(event) {
+  let detectActive = document.querySelectorAll('.nav_links a');
+  detectActive[1].classList.add('active')
+  detectActive[2].classList.remove('active')
+  detectActive[3].classList.remove('active')
+  let detectNav = document.querySelector('nav');
+  detectNav.classList.toggle('show')
+  let detectSelf = document.querySelector('.hamburger');
+  detectSelf.classList.toggle('is-active')
 
-  >
+};
+
+function activeGameplay(event) {
+  let detectActive = document.querySelectorAll('.nav_links a');
+  detectActive[2].classList.add('active')
+  detectActive[1].classList.remove('active')
+  detectActive[3].classList.remove('active')
+  let detectNav = document.querySelector('nav');
+  detectNav.classList.toggle('show')
+  let detectSelf = document.querySelector('.hamburger');
+  detectSelf.classList.toggle('is-active')
+};
+
+function activeBets(event) {
+  let detectActive = document.querySelectorAll('.nav_links a');
+  detectActive[3].classList.add('active')
+  detectActive[2].classList.remove('active')
+  detectActive[1].classList.remove('active')
+  let detectNav = document.querySelector('nav');
+  detectNav.classList.toggle('show')
+  let detectSelf = document.querySelector('.hamburger');
+  detectSelf.classList.toggle('is-active')
+
+};
+
+function showMobileNav() {
+  console.log('hamburger')
+  let detectNav = document.querySelector('nav');
+  detectNav.classList.toggle('show')
+  let detectSelf = document.querySelector('.hamburger');
+  detectSelf.classList.toggle('is-active')
+
+}
+
+const HeaderLeader = () => (
+
+  <header className="alt_nav" >
 
 
-    <div className="logo">
-      <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        <img className="img_responsive" alt="chevron" src="/nav_logo_alt.png" />
-      </Link>
-    </div>
+      <div className="logo" >
+          <Link to="/">
+              <img className="img_responsive"
+                  alt="chevron"
+                  src="/nav_logo_alt.png" />
+          </Link>
+      </div>
 
 
-    <div className="nav_links">
-      <ul>
-        <li>
-          <Link
-            to="/home/#overview">overview</Link>
-        </li>
+      <nav className="nav_links desktop_nav">
 
-        <li>
-          <Link
-            to="/home/#gameplay">gameplay</Link>
-        </li>
+          <ul>
+              <div className="hamburger_logo" >
+                  <Link to="/"
+                  >
+                      <img className="img_responsive"
+                          alt="chevron"
+                          src="/nav_logo.png" />
+                  </Link> </div >
+              <li >
+                  <Link to="/home/#overview"
+                      onClick={
+                          activeOverview
+                      } > overview </Link>
+              </li >
 
-        <li >
-          <Link
-            to="/bets">place bets</Link>
-        </li>
+              < li >
+                  <Link to="/home/#gameplay"
+                      onClick={
+                          activeGameplay
+                      } > gameplay </Link> </li >
 
-        <li className="active">
-          <Link
-            to="#">leaderboard</Link>
-        </li>
-      </ul>
-    </div>
-  </header>
+              <li >
+                  <Link to="/home/#place_bets"
+                      onClick={
+                          activeBets
+                      } > place bets </Link> </li >
+
+              <li >
+                  <Link to="#" > leaderboard </Link> </li > </ul>
+
+      </nav>
+
+
+      <div className="hamburger hamburger--squeeze"
+          onClick={
+              showMobileNav
+          } >
+          <div className="hamburger-box" >
+              <div className="hamburger-inner" >
+              </div> </div> </div>  </header>
 )
 
-HeaderLeader.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-HeaderLeader.defaultProps = {
-  siteTitle: ``,
-}
-
-export default HeaderLeader
+export default HeaderLeader 
