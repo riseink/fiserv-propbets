@@ -29,13 +29,7 @@ const Layout = ({ children }) => {
       <div className="page_wrapper"
       >
         <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built by
-          {` `}
-          <a href="https://www.intersport.global/">Intersport</a>
-        </footer>
+
       </div>
     </>
   )

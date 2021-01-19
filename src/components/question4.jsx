@@ -26,7 +26,7 @@ class Question4 extends Component {
               <a onClick={this.back}><img src='question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
-              <h3 className="question">Who will win the coin toss?</h3>
+              <h3 className="question">Who will kickoff to start the game?</h3>
               <RadioGroup row
                 name="question4"
                 id="question4"

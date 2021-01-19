@@ -29,7 +29,6 @@ class Ledger extends React.Component {
 
     return (
       <LayoutLeader>
-      <div className="table-wrapper">
         <Helmet>
           <body class='body_leaderboard' />
         </Helmet>
@@ -38,8 +37,9 @@ class Ledger extends React.Component {
         <h2>LeaderBoard</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum metus aliquet tortor accumsan vulputate. Nam accumsan nibh ut augue vulputate rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </div>
+      <div className="table-wrapper">
 
-        <table className="fl-table" cellSpacing="0 20px">
+        <table className="fl-table">
           <thead>
             <tr>
               <th>TEAM</th>

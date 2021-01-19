@@ -26,7 +26,7 @@ class Question8 extends Component {
               <a onClick={this.back}><img src='question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
-              <h3 className="question">What beer brand's commercial will appear first?</h3>
+              <h3 className="question">What beer brand's commercial will appear first? Be specific!</h3>
               <TextField
                 hintText="Please write in your answer"
                 floatingLabelText="Please write in your answer"

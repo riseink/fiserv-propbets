@@ -20,7 +20,7 @@ const HomePage = () => (
       </div>
     </div>
     <div id="gameplay" className="gameplay_section">
-    <div className="gameplay_item">
+    <div className="gameplay_item flex_end">
     <h2>Game Play</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum metus aliquet tortor accumsan vulputate. Nam accumsan nibh ut augue vulputate rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu tortor id lorem mattis hendrerit et in lacus. Pellentesque id nulla mollis, vehicula turpis vitae, euismod est. Suspendisse posuere nisi a tempus pretium. Ut molestie turpis justo, non dignissim dui eleifend rutrum. In auctor ultrices tristique. Donec finibus, tortor quis eleifend consectetur, massa ligula maximus eros, ut tempor est enim id felis.</p>
     </div>

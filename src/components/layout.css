@@ -929,7 +929,9 @@ h1.question {
 }
 
 .body_ledger .fl-table tr td:first-child,
-.body_ledger .fl-table tr th:first-child {
+.body_ledger .fl-table tr th:first-child,
+.body_leaderboard .fl-table tr td:first-child,
+.body_leaderboard .fl-table tr th:first-child {
     position: sticky;
     left: 0;
     background: black;
@@ -938,12 +940,15 @@ h1.question {
  
 }
 
-.body_ledger .fl-table tr:nth-child(odd) td:first-child{
+.body_ledger .fl-table tr:nth-child(odd) td:first-child,
+.body_leaderboard .fl-table tr:nth-child(odd) td:first-child{
     background: #414042;
 }
 
 .table-wrapper {
     margin: 40px;
+    background:black;
+    display: inline-block;
 }
 
 .fl-table {
@@ -1173,4 +1178,117 @@ h3.question {
         transform: rotate(-90deg);
         transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
+
+
+    .table-wrapper {
+        margin: 20px;
+        display: inline-flex;
+        width: calc(100vw - 100px);
+        overflow-x: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        background:black;
+        align-items: center;
+    }
+
+    .table-wrapper::after{
+        content:'';
+        width:40px;
+        background-image: url('/../../question_chevron_forward.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100px;
+        display: inherit;
+        position: absolute;
+        right: 5px;
+    }
+
+    .table-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+      
+  
+    
+    .fl-table {
+        border-spacing: 20px 0;
+        border-collapse: initial!important;
+        width: 90vw;
+        max-width: 100%;
+        color: white;
+       
+    }
+    
+    .fl-table td,
+    .fl-table th {
+        padding: 2px 4px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+        width:200px;
+    }
+
+    .leaderboard_copy {
+        width: 90vw;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        padding: 40px 0 40px 0;
+    }
+
+    .fixed_nav{
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 100%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 100%);
+    }
+
+
+.hero_logo {
+    width: 80vw;
+}
+.copy_container {
+    width: 80vw;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.overview_section {
+    background-size: 160%;
+    width: 100%;
+    height: 90vh;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.gameplay_section {
+    flex-wrap: wrap;
+}
+.gameplay_item{
+    width:90vw;
+}
+
+
+element.style {
+}
+.logo {
+    width: 200px;
+}
+
+.flex_end{
+    align-self:flex-end;
+}
+
+.place_bets_section {
+    height: auto;
+}
+.bets_copy {
+    width: 80vw;
+    padding: 20vh 0 10vh 0;
+}
+
+.button_container{
+    width:70vw;
+    padding-bottom: 20vh;
+}
+
 }
