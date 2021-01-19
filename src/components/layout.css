@@ -1292,3 +1292,24 @@ element.style {
 }
 
 }
+
+@media only screen and (max-width: 480px) {
+    .body_ledger .fl-table tr td:first-child,
+    .body_ledger .fl-table tr th:first-child,
+    .body_leaderboard .fl-table tr td:first-child,
+    .body_leaderboard .fl-table tr th:first-child {
+        width:150px;
+     
+    }
+
+    .fl-table td,
+    .fl-table th {
+        width:150px;
+    }
+
+    .table-wrapper {
+        margin: 40px 10px;
+        width: calc(100vw - 60px);
+    }
+
+}
