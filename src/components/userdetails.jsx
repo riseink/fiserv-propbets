@@ -3,7 +3,10 @@ import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 // import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
-import {reactLocalStorage} from 'reactjs-localstorage';
+
+if (typeof window !== "undefined") {
+  var accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
+}
 
 class FormUserDetails extends Component {
 
@@ -23,7 +26,6 @@ class FormUserDetails extends Component {
  
     
     const { values, handleChange } = this.props;
-    const accessKeyValue = reactLocalStorage.get('FISERV_ACCESS_KEY' , true);
 
 
     return (
