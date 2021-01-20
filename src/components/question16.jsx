@@ -23,7 +23,7 @@ class Question16 extends Component {
         <React.Fragment>
           <div className="question_wrapper">
             <div className="question_chevron">
-              <a onClick={this.back}><img src='question_chevron_back.png'></img></a>
+              <a onClick={this.back}><img src='/question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
               <h3 className="question">How many songs will be performed during the halftime show? </h3>
@@ -54,7 +54,7 @@ class Question16 extends Component {
               />
             </div>
             <div className="question_chevron">
-              <a onClick={this.continue}><img src='question_chevron_forward.png'></img></a>
+              <a onClick={this.continue}><img src='/question_chevron_forward.png'></img></a>
             </div>
 
           </div>
