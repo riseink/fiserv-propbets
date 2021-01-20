@@ -26,12 +26,14 @@ import Question22 from "./question22";
 import Question23 from "./question23";
 import Question24 from "./question24";
 import Question25 from "./question25";
+import {reactLocalStorage} from 'reactjs-localstorage';
 
 
 import firebase from "../components/firebase"
 
 const db = firebase.firestore();
-const accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
+
+const accessKeyValue = reactLocalStorage.get('FISERV_ACCESS_KEY' , true);
 
 class UserForm extends Component {
   state = {

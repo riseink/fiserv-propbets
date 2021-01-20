@@ -2,6 +2,7 @@ import React from "react";
 import firebase from "../components/firebase";
 import Helmet from 'react-helmet'
 import LayoutAlt from "../components/layout_alt"
+import {reactLocalStorage} from 'reactjs-localstorage';
 
 const db = firebase.firestore();
 
@@ -14,7 +15,7 @@ class MyLedger extends React.Component {
   }
 
   componentDidMount() {
-   const accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
+    const accessKeyValue = reactLocalStorage.get('FISERV_ACCESS_KEY' , true);
 
     db.collection("players").where("accessKey", "==", accessKeyValue)
       .get()
