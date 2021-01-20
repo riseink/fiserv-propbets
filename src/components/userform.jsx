@@ -26,6 +26,7 @@ import Question22 from "./question22";
 import Question23 from "./question23";
 import Question24 from "./question24";
 import Question25 from "./question25";
+import {reactLocalStorage} from 'reactjs-localstorage';
 
 
 import firebase from "../components/firebase"

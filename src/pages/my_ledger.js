@@ -2,6 +2,7 @@ import React from "react";
 import firebase from "../components/firebase";
 import Helmet from 'react-helmet'
 import LayoutAlt from "../components/layout_alt"
+import {reactLocalStorage} from 'reactjs-localstorage';
 
 const db = firebase.firestore();
 
