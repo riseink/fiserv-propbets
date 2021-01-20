@@ -32,8 +32,9 @@ import firebase from "../components/firebase"
 
 const db = firebase.firestore();
 
-const accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
-
+if (typeof window !== "undefined") {
+  var accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
+}
 class UserForm extends Component {
   state = {
     step: 1,

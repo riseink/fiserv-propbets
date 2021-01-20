@@ -5,6 +5,10 @@ import LayoutAlt from "../components/layout_alt"
 
 const db = firebase.firestore();
 
+if (typeof window !== "undefined") {
+  var accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
+}
+
 class MyLedger extends React.Component {
   constructor(props) {
     super(props);
@@ -13,8 +17,9 @@ class MyLedger extends React.Component {
     };
   }
 
+  
+
   componentDidMount() {
-   const accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
 
     db.collection("players").where("accessKey", "==", accessKeyValue)
       .get()
