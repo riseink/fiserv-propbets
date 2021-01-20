@@ -23,6 +23,7 @@ function showMobileNav() {
 const HeaderLeader = () => (
 
   <header className="alt_nav" >
+      <div className="black_wrapper">
 
 
       <div className="logo" >
@@ -68,7 +69,7 @@ const HeaderLeader = () => (
           } >
           <div className="hamburger-box" >
               <div className="hamburger-inner" >
-              </div> </div> </div>  </header>
+              </div> </div> </div> </div> </header>
 )
 
 

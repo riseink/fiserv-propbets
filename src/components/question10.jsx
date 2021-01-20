@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-// import Radio from '@material-ui/core/Radio';
-// import RadioGroup from '@material-ui/core/RadioGroup';
-import TextField from "material-ui/TextField";
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RaisedButton from "material-ui/RaisedButton";
 
 class Question10 extends Component {
@@ -27,14 +27,16 @@ class Question10 extends Component {
             </div>
             <div className="question_container">
               <h3 className="question">How many times will they show Pat Mahomes' family on the broadcast?</h3>
-              <TextField
-                hintText="Please write in your answer"
-                floatingLabelText="Please write in your answer"
-                onChange={handleChange("question10")}
-                value={values.question10}
-                id="question10"
+              <RadioGroup row
                 name="question10"
-              />
+                id="question10"
+                value={values.question10}
+                onChange={handleChange}>
+                <FormControlLabel value="0" control={<Radio />} label="O" onChange={handleChange("question10")} />
+                <FormControlLabel value="1" control={<Radio />} label="1" onChange={handleChange("question10")} />
+                <FormControlLabel value="2" control={<Radio />} label="2" onChange={handleChange("question10")} />
+                <FormControlLabel value="3+" control={<Radio />} label="3+" onChange={handleChange("question10")} />
+              </RadioGroup>
               <br />
               <RaisedButton
                 label="Continue"

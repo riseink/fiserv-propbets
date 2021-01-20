@@ -5,7 +5,7 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RaisedButton from "material-ui/RaisedButton";
 
-class Question9 extends Component {
+class Question14 extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -26,16 +26,14 @@ class Question9 extends Component {
               <a onClick={this.back}><img src='question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
-              <h3 className="question">Which automobile brand commercial will air first?</h3>
-              <RadioGroup row
-                name="question9"
-                id="question9"
-                value={values.question9}
+              <h3 className="question">What will the result of the first coaches challenge be?</h3>
+              <RadioGroup 
+                name="question14"
+                id="question14"
+                value={values.question14}
                 onChange={handleChange}>
-                <FormControlLabel value="Hyundai" control={<Radio />} label="Hyundai" onChange={handleChange("question9")} />
-                <FormControlLabel value="Kia" control={<Radio />} label="Kia" onChange={handleChange("question9")} />
-                <FormControlLabel value="Toyota" control={<Radio />} label="Toyota" onChange={handleChange("question9")} />
-                <FormControlLabel value="Ford" control={<Radio />} label="Ford" onChange={handleChange("question9")} />
+                <FormControlLabel value="Play overturned" control={<Radio />} label="Play overturned" onChange={handleChange("question14")} />
+                <FormControlLabel value="Play stands" control={<Radio />} label="Play stands" onChange={handleChange("question14")} />
               </RadioGroup>
               <br />
               <RaisedButton
@@ -45,7 +43,6 @@ class Question9 extends Component {
                 onClick={this.continue}
               />
 
-              
               <RaisedButton
                 label="Back"
                 primary={false}
@@ -70,4 +67,4 @@ const styles = {
   }
 };
 
-export default Question9;
+export default Question14;

@@ -50,6 +50,7 @@ function showMobileNav() {
 const Header = () => (
 
     <header className="fixed_nav" >
+        <div className="black_wrapper">
 
 
         <div className="logo" >
@@ -102,7 +103,7 @@ const Header = () => (
             } >
             <div className="hamburger-box" >
                 <div className="hamburger-inner" >
-                </div> </div> </div>  </header>
+                </div> </div> </div>  </div></header>
 )
 
 

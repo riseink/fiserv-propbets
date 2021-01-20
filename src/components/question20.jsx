@@ -5,7 +5,7 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RaisedButton from "material-ui/RaisedButton";
 
-class Question9 extends Component {
+class Question20 extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -26,16 +26,16 @@ class Question9 extends Component {
               <a onClick={this.back}><img src='question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
-              <h3 className="question">Which automobile brand commercial will air first?</h3>
+              <h3 className="question">What will the final scoring play of the game be?</h3>
               <RadioGroup row
-                name="question9"
-                id="question9"
-                value={values.question9}
+                name="question20"
+                id="question20"
+                value={values.question20}
                 onChange={handleChange}>
-                <FormControlLabel value="Hyundai" control={<Radio />} label="Hyundai" onChange={handleChange("question9")} />
-                <FormControlLabel value="Kia" control={<Radio />} label="Kia" onChange={handleChange("question9")} />
-                <FormControlLabel value="Toyota" control={<Radio />} label="Toyota" onChange={handleChange("question9")} />
-                <FormControlLabel value="Ford" control={<Radio />} label="Ford" onChange={handleChange("question9")} />
+                <FormControlLabel value="Chiefs TD" control={<Radio />} label="Chiefs TD" onChange={handleChange("question20")} />
+                <FormControlLabel value="Chiefs FG" control={<Radio />} label="Chiefs FG" onChange={handleChange("question20")} />
+                <FormControlLabel value="Packers TD" control={<Radio />} label="Packers TD" onChange={handleChange("question20")} />
+                <FormControlLabel value="Packers FG" control={<Radio />} label="Packers FG" onChange={handleChange("question20")} />
               </RadioGroup>
               <br />
               <RaisedButton
@@ -70,4 +70,4 @@ const styles = {
   }
 };
 
-export default Question9;
+export default Question20;

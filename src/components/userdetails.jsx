@@ -5,6 +5,7 @@ import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 
 class FormUserDetails extends Component {
+
   continue = e => {
 
     e.preventDefault();
@@ -15,48 +16,38 @@ class FormUserDetails extends Component {
     this.props.prevStep();
   };
 
+
+
   render() {
+ 
+    
     const { values, handleChange } = this.props;
+    const accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
+
+
     return (
       <MuiThemeProvider>
         <React.Fragment>
           <div className="question_wrapper">
 
             <div className="question_container">
-              <h3 className="question">Player Information</h3>
+              <h3 className="question">Confirm Access Key</h3>
 
               <TextField
-                hintText="Enter your First Name"
-                floatingLabelText="First Name"
-                onChange={handleChange("firstName")}
-                value={values.firstName}
-                id="firstName"
-                name="firstName"
+                hintText="Access Key"
+                floatingLabelText="Access Key"
+                onChange={handleChange("accessKey")}
+                value={accessKeyValue}
+                id="accessKey"
+                name="accessKey"
               />
-              <br />
-              <TextField
-                hintText="Enter your Last Name"
-                floatingLabelText="Last Name"
-                onChange={handleChange("lastName")}
-                value={values.lastName}
-                id="lastName"
-                name="lastName"
-              />
-              <br />
-              <TextField
-                hintText="Enter your Email"
-                floatingLabelText="Email"
-                onChange={handleChange("email")}
-                value={values.email}
-                id="email"
-                name="email"
-              />
+          
               <br />
               <RaisedButton
                 label="Continue"
                 primary={true}
                 style={styles.button}
-                onClick={this.continue}
+                onClick={this.continue }
               />
             </div>
           </div>

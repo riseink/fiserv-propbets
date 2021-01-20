@@ -845,6 +845,10 @@ h1.question {
     justify-content: space-evenly;
     align-items: center;
 }
+.body_bets{
+    position:relative;
+    height: 100vh;
+}
 
 .gameplay_item {
     width: 40%;
@@ -887,10 +891,17 @@ h1.question {
     color: #f60!important;
 }
 
+.confirm_container{
+    text-align:center;
+    font-size:75%;
+    width:50vw;
+    margin: 0 25vw;
+}
+
 
 /* Table CSS */
 
-.body_ledger {
+.body_ledger, .body_my_ledger {
     background: url('/../../leaderboard_bg.jpg');
     background-size: cover;
     background-position: center bottom;
@@ -927,9 +938,12 @@ h1.question {
     position: relative;
 }
 
-.body_ledger .fl-table td {
+.body_ledger .fl-table td,
+.body_my_ledger .fl-table td {
     font-size: 14px;
 }
+
+
 
 .body_ledger .fl-table tr td:first-child,
 .body_ledger .fl-table tr th:first-child,
@@ -1038,6 +1052,8 @@ h3.question {
     width: 100%;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .question_container {
@@ -1058,6 +1074,37 @@ h3.question {
     display: none;
 }
 
+.bets_logo{
+    position:absolute;
+    width:15%;
+    bottom:5vh;
+    right:5vw;
+}
+
+.bets_copy_container{
+    width:80vh;
+    margin:40px auto;
+    text-align:center;
+}
+.bets_copy_container h2{
+    color: #f60;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.black_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.confirm_container h3.question{
+    width:100%
+}
+
+
 @media only screen and (max-width: 900px) {
     .desktop_nav {
         display: none!important;
@@ -1073,7 +1120,7 @@ h3.question {
         top: 0;
         left: 0;
         display: inline-block;
-        z-index:1;
+        z-index:10;
     }
     .show.nav_links ul {
         text-align: center;
@@ -1111,7 +1158,7 @@ h3.question {
         border: 0;
         margin: 0;
         overflow: visible;
-        z-index: 2;
+        z-index: 12;
     }
     .hamburger:hover {
         opacity: 0.7;
@@ -1196,6 +1243,17 @@ h3.question {
         align-items: center;
     }
 
+    .body_my_ledger .table-wrapper{
+        width:100vw!important
+    }
+
+    .body_my_ledger .table-wrapper::after{
+        width:100vw!important;
+        width:0px;
+        height: 0px;
+
+    }
+
     .table-wrapper::after{
         content:'';
         width:40px;
@@ -1240,13 +1298,19 @@ h3.question {
         padding: 40px 0 40px 0;
     }
 
-    .fixed_nav, .alt_nav{
+    .alt_nav{
+        background:#f60;
+    }
+
+.black_wrapper{
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 100%);
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.65) 100%);
-    }
-
-
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .hero_logo {
     width: 80vw;
 }
@@ -1291,6 +1355,8 @@ element.style {
     padding: 20vh 0 10vh 0;
 }
 
+
+
 .button_container{
     width:70vw;
     padding-bottom: 20vh;
@@ -1315,6 +1381,29 @@ element.style {
     .table-wrapper {
         margin: 40px 10px;
         width: calc(100vw - 60px);
+    }
+
+    .body_my_ledger .table-wrapper{
+        width: calc(100vw - 20px)!important
+
+
+    }
+
+    .body_my_ledger .table-wrapper::after{
+        width:100vw!important;
+        width:0px;
+        height: 0px;
+
+    }
+
+    .body_my_ledger .fl-table td,
+    .body_my_ledger .fl-table th {
+        width:50%;
+    }
+
+    .body_my_ledger .fl-table{
+        width:100%;
+        display:inline-block;
     }
 
 }

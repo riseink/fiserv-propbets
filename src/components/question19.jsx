@@ -5,7 +5,7 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RaisedButton from "material-ui/RaisedButton";
 
-class Question9 extends Component {
+class Question19 extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -26,16 +26,14 @@ class Question9 extends Component {
               <a onClick={this.back}><img src='question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
-              <h3 className="question">Which automobile brand commercial will air first?</h3>
-              <RadioGroup row
-                name="question9"
-                id="question9"
-                value={values.question9}
+              <h3 className="question">Will there be a successful two-point conversion? </h3>
+              <RadioGroup 
+                name="question19"
+                id="question19"
+                value={values.question19}
                 onChange={handleChange}>
-                <FormControlLabel value="Hyundai" control={<Radio />} label="Hyundai" onChange={handleChange("question9")} />
-                <FormControlLabel value="Kia" control={<Radio />} label="Kia" onChange={handleChange("question9")} />
-                <FormControlLabel value="Toyota" control={<Radio />} label="Toyota" onChange={handleChange("question9")} />
-                <FormControlLabel value="Ford" control={<Radio />} label="Ford" onChange={handleChange("question9")} />
+                <FormControlLabel value="Yes" control={<Radio />} label="Yes" onChange={handleChange("question19")} />
+                <FormControlLabel value="No" control={<Radio />} label="No" onChange={handleChange("question19")} />
               </RadioGroup>
               <br />
               <RaisedButton
@@ -45,7 +43,6 @@ class Question9 extends Component {
                 onClick={this.continue}
               />
 
-              
               <RaisedButton
                 label="Back"
                 primary={false}
@@ -70,4 +67,4 @@ const styles = {
   }
 };
 
-export default Question9;
+export default Question19;
