@@ -26,7 +26,7 @@ import Question22 from "./question22";
 import Question23 from "./question23";
 import Question24 from "./question24";
 import Question25 from "./question25";
-import {reactLocalStorage} from 'reactjs-localstorage';
+import Final from "./final";
 
 
 import firebase from "../components/firebase"
@@ -111,7 +111,7 @@ class UserForm extends Component {
     });
 
     this.setState({
-      step: 1,
+      step: 99,
       firstName: "",
       lastName: "",
       email: "",
@@ -413,6 +413,10 @@ class UserForm extends Component {
             >
           </Confirm>
           
+        );
+        case 99:
+        return (
+          <Final />
         );
       default:
         break;

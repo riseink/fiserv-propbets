@@ -54,7 +54,7 @@ const HeaderLeader = () => (
 
               <li >
                   <Link to="/home/#place_bets"> place bets </Link> </li >
-
+                  <li><Link to="/my_bets"> my bets </Link> </li>
               <li >
                   <Link className="active" to="#" onClick={
                           nukeNav

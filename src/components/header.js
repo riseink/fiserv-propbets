@@ -90,6 +90,8 @@ const Header = () => (
                         onClick={
                             activeBets
                         } > place bets </Link> </li >
+                        
+                        <li><Link to="/my_bets"> my bets </Link> </li>
 
                 <li >
                     <Link to="/leaderboard" > leaderboard </Link> </li > </ul>

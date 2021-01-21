@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Helmet from 'react-helmet'
-import { reactLocalStorage } from 'reactjs-localstorage';
 
 
 function gateKeeper (event){
