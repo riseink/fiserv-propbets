@@ -843,6 +843,10 @@ h3.question {
     background-position: center bottom;
 }
 
+.overview_section h2{
+    color:#f60;
+}
+
 .copy_container {
     width: 50vw;
     margin: 0 auto 0 auto;
@@ -867,6 +871,8 @@ h3.question {
 
 .gameplay_item {
     width: 40%;
+    text-align:center;
+    color:white!important;
 }
 
 .place_bets_section {
@@ -890,7 +896,7 @@ h3.question {
     width: 50vw;
     margin: 0 auto 0 auto;
     text-align: center;
-    padding: 20vh 0 10vh 0;
+    padding: 0vh 0 20vh 0;
 }
 
 .bets_copy h2 {
