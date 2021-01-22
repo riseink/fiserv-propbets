@@ -1058,8 +1058,8 @@ span.team_span {
 
 .leaderboard_copy h2 {
     color: #f60;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+    /* font-weight: 300;
+    font-family: 'Roboto', sans-serif; */
     text-transform: uppercase;
 }
 
@@ -1110,8 +1110,6 @@ span.team_span {
 }
 .bets_copy_container h2{
     color: #f60;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
 
@@ -1407,7 +1405,7 @@ element.style {
 }
 .bets_copy {
     width: 80vw;
-    padding: 20vh 0 10vh 0;
+    padding: 10vh 0 20vh 0;
 }
 
 
