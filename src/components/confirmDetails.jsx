@@ -35,7 +35,7 @@ class Confirm extends Component {
                 onClick={this.back}
               />
       </div></div>
-        </React.Fragment>
+  <div className="pad_bottom"></div>      </React.Fragment>
       </MuiThemeProvider>
     );
   }

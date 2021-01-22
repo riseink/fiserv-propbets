@@ -34,8 +34,8 @@ class Leaderboard extends React.Component {
         </Helmet>
 
         <div className="leaderboard_copy">
-        <h2>LeaderBoard</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum metus aliquet tortor accumsan vulputate. Nam accumsan nibh ut augue vulputate rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <h2>SCOREBOARD</h2>
+        <p>Gatorade showers are optional. </p>
       </div>
       <div className="table-wrapper">
 

@@ -19,7 +19,7 @@ class Final extends Component {
           <Link to="/my_bets"> my bets </Link>
      
       </div></div>
-        </React.Fragment>
+  <div className="pad_bottom"></div>      </React.Fragment>
       </MuiThemeProvider>
     );
   }

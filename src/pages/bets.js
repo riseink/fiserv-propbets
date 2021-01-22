@@ -13,9 +13,9 @@ const BetsPage = () => (
           <body class='body_bets' />
     </Helmet>
     <div className="bets_copy_container">
-    <h2>Overview </h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <h4>Good Luck! Answer the following questions below: </h4>
+    <h2>CHOOSE LIKE A CHAMPION</h2>
+    <p>Lock in each pick by hitting continue. You can always go back. Just remember, the play clock is ticking!</p>
+    
     </div>
     <UserForm />
     <div className="bets_logo">

@@ -1,12 +1,11 @@
-
 import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import Radio from '@material-ui/core/Radio';
+// import RadioGroup from '@material-ui/core/RadioGroup';
+import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 
-class Question22 extends Component {
+class Question26 extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -27,17 +26,15 @@ class Question22 extends Component {
               <a onClick={this.back}><img src='/question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
-              <h3 className="question">What color Gatorade will be dumped on the winning coach?</h3>
-              <RadioGroup row
-                name="question22"
-                id="question22"
-                value={values.question22}
-                onChange={handleChange}>
-                <FormControlLabel value="Orange" control={<Radio />} label="Orange" onChange={handleChange("question22")} />
-                <FormControlLabel value="Purple" control={<Radio />} label="Purple" onChange={handleChange("question22")} />
-                <FormControlLabel value="Yellow" control={<Radio />} label="Yellow" onChange={handleChange("question22")} />
-                <FormControlLabel value="Other" control={<Radio />} label="Other" onChange={handleChange("question22")} />
-              </RadioGroup>
+              <h3 className="question">TIEBREAKER - Total points scored by both teams </h3>
+              <TextField
+                hintText="Please write in your answer"
+                floatingLabelText="Please write in your answer"
+                onChange={handleChange("question26")}
+                value={values.question26}
+                id="question26"
+                name="question26"
+              />
               <br />
               <RaisedButton
                 label="Continue"
@@ -67,8 +64,9 @@ class Question22 extends Component {
 
 const styles = {
   button: {
-    margin: 15
+    marginTop: 15,
+    marginRight:15,
   }
 };
 
-export default Question22;
+export default Question26;

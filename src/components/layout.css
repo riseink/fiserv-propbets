@@ -785,6 +785,11 @@ h1.question {
     padding-top: 30vh;
 }
 
+h3.question {
+    width: 30vw;
+}
+
+
 .nav_links {
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
@@ -819,6 +824,8 @@ h1.question {
     font-size: 16px;
     }
 }
+
+
 
 .intro_section {
     background: url('/../../black_and_white_football.jpg');
@@ -1054,9 +1061,7 @@ span.team_span {
     color: #fff;
 }
 
-h3.question {
-    width: 30vw;
-}
+
 
 .question_wrapper {
     display: flex;
@@ -1093,7 +1098,7 @@ h3.question {
 }
 
 .bets_copy_container{
-    width:80vh;
+    width:80vw;
     margin:40px auto;
     text-align:center;
 }
@@ -1136,6 +1141,20 @@ h3.question {
 }
 
 @media only screen and (max-width: 900px) {
+    .welcome_image {
+        width: 80vw;
+        margin: 10vh auto;
+        max-width: 600px
+    }
+    .pad_bottom{
+        width: 100%;
+    height: 50px;
+    }
+
+    h3.question {
+        width: 60vw;
+    }
+
     .desktop_nav {
         display: none!important;
     }

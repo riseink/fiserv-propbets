@@ -15,14 +15,17 @@ const HomePage = () => (
 
     <div id="overview" className="overview_section">
       <div className="copy_container">
-        <h2>Overview</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum metus aliquet tortor accumsan vulputate. Nam accumsan nibh ut augue vulputate rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu tortor id lorem mattis hendrerit et in lacus. Pellentesque id nulla mollis, vehicula turpis vitae, euismod est. Suspendisse posuere nisi a tempus pretium. Ut molestie turpis justo, non dignissim dui eleifend rutrum. In auctor ultrices tristique. Donec finibus, tortor quis eleifend consectetur, massa ligula maximus eros, ut tempor est enim id felis.</p>
+        <h2>THE ROAD TO GLORY STARTS HERE</h2>
+        <p>Some champions are made on the gridiron. Others are forged in the fire of the boardroom. But today, there can be only one.</p>
+        <p>If you have the smarts… the savvy… the intestinal fortitude… destiny awaits.</p>
       </div>
     </div>
     <div id="gameplay" className="gameplay_section">
     <div className="gameplay_item flex_end">
-    <h2>Game Play</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum metus aliquet tortor accumsan vulputate. Nam accumsan nibh ut augue vulputate rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu tortor id lorem mattis hendrerit et in lacus. Pellentesque id nulla mollis, vehicula turpis vitae, euismod est. Suspendisse posuere nisi a tempus pretium. Ut molestie turpis justo, non dignissim dui eleifend rutrum. In auctor ultrices tristique. Donec finibus, tortor quis eleifend consectetur, massa ligula maximus eros, ut tempor est enim id felis.</p>
+    <h2>THE PLAYBOOK</h2>
+        <p>The objective is simple. Outsmart the competition and leave them trembling in your wake.</p>
+        <p>You’ll be tasked with a series of prop bets––or predictions––for next week’s Super Bowl. Your secret weapon? An NFL Hall of Famer at your side.</p>
+        <p>Choose wisely and the spoils of victory could be yours.</p>
     </div>
     <div className="gameplay_item">
     <img className="img_responsive" alt="chevron" src="/game_play.png" />
@@ -30,8 +33,8 @@ const HomePage = () => (
     </div>
     <div className="place_bets_section" id="place_bets">
     <div className="bets_copy">
-        <h2>Are you Ready?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum metus aliquet tortor accumsan vulputate. Nam accumsan nibh ut augue vulputate rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <h2>IT’S GAME TIME, BABY!</h2>
+        <p>Ready for action? Then, batten down the hatches and gird your loins. It’s time to separate the contenders from the pretenders.</p>
       </div>
 
       <div className="button_container">

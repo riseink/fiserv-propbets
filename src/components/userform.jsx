@@ -26,6 +26,8 @@ import Question22 from "./question22";
 import Question23 from "./question23";
 import Question24 from "./question24";
 import Question25 from "./question25";
+import Question26 from "./question26";
+
 import Final from "./final";
 
 
@@ -68,6 +70,7 @@ class UserForm extends Component {
     question23: "",
     question24: "",
     question25: "",
+    question26: "",
   };
 
   handleSubmit = e => {
@@ -102,6 +105,7 @@ class UserForm extends Component {
       question23: this.state.question23,
       question24: this.state.question24,
       question25: this.state.question25,
+      question26: this.state.question26,
       score: 0,
       rank: 0,
       player_team_name: "",
@@ -140,6 +144,7 @@ class UserForm extends Component {
       question23: "",
       question24: "",
       question25: "",
+      question26: "",
     });
   }
 
@@ -164,8 +169,8 @@ class UserForm extends Component {
   };
   render() {
     const { step } = this.state;
-    const { firstName, lastName, email, question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question12, question13, question14, question15, question16, question17, question18, question19, question20, question21, question22, question23, question24, question25 } = this.state;
-    const values = { firstName, lastName, email, question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question12, question13, question14, question15, question16, question17, question18, question19, question20, question21, question22, question23, question24, question25 };
+    const { firstName, lastName, email, question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question12, question13, question14, question15, question16, question17, question18, question19, question20, question21, question22, question23, question24, question25, question26 } = this.state;
+    const values = { firstName, lastName, email, question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question12, question13, question14, question15, question16, question17, question18, question19, question20, question21, question22, question23, question24, question25, question26 };
 
     switch (step) {
       case 1:
@@ -402,7 +407,16 @@ class UserForm extends Component {
             values={values}
           />
         );
-      case 27:
+        case 27:
+          return (
+            <Question26
+              nextStep={this.nextStep}
+              prevStep={this.prevStep}
+              handleChange={this.handleChange}
+              values={values}
+            />
+          );
+      case 28:
         return (
           <Confirm
           nextStep={this.nextStep}
