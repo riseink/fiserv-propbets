@@ -45,7 +45,7 @@ class Ledger extends React.Component {
             </tr>
           </thead>
           <tbody>
-            <tr key="1">
+          <tr key="1">
               <td>How long will it take to sing the national anthem?</td>
               {players.map((player) => (
                 <td>{player.question1}</td>
@@ -124,73 +124,73 @@ class Ledger extends React.Component {
               ))}
             </tr>
             <tr key="14">
-              <td>Who will kickoff to start the game?</td>
+              <td>What will the result of the first coaches challenge be?</td>
               {players.map((player) => (
                 <td>{player.question14}</td>
               ))}
             </tr>
             <tr key="15">
-              <td>Which coach will broadcasters mention first after kickoff?</td>
+              <td>What color shoes will The Weeknd wear for his halftime performance?</td>
               {players.map((player) => (
                 <td>{player.question15}</td>
               ))}
             </tr>
             <tr key="16">
-              <td>First commercial spot after the 1st quarter will feature  what brand?</td>
+              <td>How many songs will be performed during the halftime show? </td>
               {players.map((player) => (
                 <td>{player.question16}</td>
               ))}
             </tr>
             <tr key="17">
-              <td>How many commercials will feature dogs?</td>
+              <td>What University will be mentioned first, in any context? </td>
               {players.map((player) => (
                 <td>{player.question17}</td>
               ))}
             </tr>
             <tr key="18">
-              <td>Which beer brand's commercial will air first? Be specific!</td>
+              <td>How many passing yards will Aaron Rodgers have?</td>
               {players.map((player) => (
                 <td>{player.question18}</td>
               ))}
             </tr>
             <tr key="19">
-              <td>Which automobile brand commercial will air first?</td>
+              <td>Will there be a successful two-point conversion?</td>
               {players.map((player) => (
                 <td>{player.question19}</td>
               ))}
             </tr>
             <tr key="20">
-              <td>How many times will they show Pat Mahomes' family on the broadcast?</td>
+              <td>What will the final scoring play of the game be?</td>
               {players.map((player) => (
                 <td>{player.question20}</td>
               ))}
             </tr>
             <tr key="21">
-              <td>How many times will they show Pat Mahomes' family on the broadcast?</td>
+              <td>Which team will win the Super Bowl?</td>
               {players.map((player) => (
                 <td>{player.question21}</td>
               ))}
             </tr>
             <tr key="22">
-              <td>How many times will they show Pat Mahomes' family on the broadcast?</td>
+              <td>What color Gatorade will be dumped on the winning coach?</td>
               {players.map((player) => (
                 <td>{player.question22}</td>
               ))}
             </tr>
             <tr key="23">
-              <td>How many times will they show Pat Mahomes' family on the broadcast?</td>
+              <td>Who will win Super Bowl MVP?</td>
               {players.map((player) => (
                 <td>{player.question23}</td>
               ))}
             </tr>
             <tr key="24">
-              <td>How many times will they show Pat Mahomes' family on the broadcast?</td>
+              <td>Who will the Super Bowl MVP thank first? </td>
               {players.map((player) => (
                 <td>{player.question24}</td>
               ))}
             </tr>
             <tr key="25">
-              <td>How many times will they show Pat Mahomes' family on the broadcast?</td>
+              <td>Will the Super Bowl MVP mention "Disney World"?</td>
               {players.map((player) => (
                 <td>{player.question25}</td>
               ))}
