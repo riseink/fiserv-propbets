@@ -27,7 +27,7 @@ class Question5 extends Component {
             </div>
             <div className="question_container">
               <h3 className="question">Which coach will broadcasters mention first after kickoff?</h3>
-              <RadioGroup row
+              <RadioGroup 
                 name="question5"
                 id="question5"
                 value={values.question5}

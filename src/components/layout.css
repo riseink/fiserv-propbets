@@ -1067,7 +1067,14 @@ span.team_span {
     color: #fff;
 }
 
+.break_row{
+    flex-wrap: wrap!important;
+}
 
+.break_row .MuiFormControlLabel-root{
+    margin-right: 0!important;
+    flex: 0 50%;
+}
 
 .question_wrapper {
     display: flex;
