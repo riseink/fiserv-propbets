@@ -26,7 +26,7 @@ class Question18 extends Component {
               <a onClick={this.back}><img src='/question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
-              <h3 className="question">How many passing yards will Aaron Rodgers have?</h3>
+              <h3 className="question">How many passing yards will Patrick Mahomes have?</h3>
               <RadioGroup row className="break_row"
                 name="question18"
                 id="question18"

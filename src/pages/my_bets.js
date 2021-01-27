@@ -107,7 +107,7 @@ class MyLedger extends React.Component {
               ))}
             </tr>
             <tr key="10">
-              <td>How many times will they show Pat Mahomes' family on the broadcast?</td>
+              <td>How many times will they show Tom Brady's family on the broadcast?</td>
               {players.map((player) => (
                 <td>{player.question10}</td>
               ))}
@@ -155,7 +155,7 @@ class MyLedger extends React.Component {
               ))}
             </tr>
             <tr key="18">
-              <td>How many passing yards will Aaron Rodgers have?</td>
+              <td>How many passing yards will Patrick Mahomes have?</td>
               {players.map((player) => (
                 <td>{player.question18}</td>
               ))}

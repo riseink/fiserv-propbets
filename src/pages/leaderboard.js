@@ -34,8 +34,8 @@ class Leaderboard extends React.Component {
         </Helmet>
 
         <div className="leaderboard_copy">
-        <h2>SCOREBOARD</h2>
-        <p>Gatorade showers are optional. </p>
+        <h2>Leaderboard</h2>
+        <p>How do you stack up against the competition? </p>
       </div>
       <div className="table-wrapper">
 
@@ -43,11 +43,11 @@ class Leaderboard extends React.Component {
           <thead>
             <tr>
               <th>TEAM</th>
-              <th>PLAYER</th>
-              <th>LOCATION</th>
               <th>HALL OF FAMER</th>
-              <th>ANSWERS</th>
-              <th>POINTS</th>
+              <th>PLAYER</th>
+              <th>COMPANY</th>
+              <th>LOCATION</th>
+              <th>SCORE</th>
             </tr>
           </thead>
           <tbody>
@@ -55,10 +55,10 @@ class Leaderboard extends React.Component {
               {players.map((player) => (
                 <tr key={player.rank} >
                 <td><span className="rank_span">{player.rank}</span> <span className="team_span">{player.player_team_name}</span></td>
-                <td>{player.player_last_name}, {player.player_first_name}</td>
-                <td>{player.player_location}</td>
                 <td>{player.player_hall_of_fame}</td>
-                <td>{player.player_tally}</td>
+                <td>{player.player_first_name} {player.player_last_name}</td>
+                <td>{player.player_company}</td>
+                <td>{player.player_location}</td>
                 <td>{player.score}</td>
                 </tr>
               ))}

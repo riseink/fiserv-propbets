@@ -1047,6 +1047,8 @@ span.team_span {
     width: 20%;
     margin: 10vh auto 0 auto;
     min-width: 250px;
+    max-width: 300px;
+
 }
 
 .leaderboard_copy {
@@ -1304,11 +1306,15 @@ span.team_span {
     }
 
     .body_my_ledger .table-wrapper{
-        width:100vw!important
+        width:100vw!important;
+        margin:40px 0;
+    }
+
+    .body_my_ledger .fl-table{
+        margin:auto;
     }
 
     .body_my_ledger .table-wrapper::after{
-        width:100vw!important;
         width:0px;
         height: 0px;
 
@@ -1443,11 +1449,6 @@ element.style {
         width: calc(100vw - 60px);
     }
 
-    .body_my_ledger .table-wrapper{
-        width: calc(100vw - 20px)!important
-
-
-    }
 
     .body_my_ledger .table-wrapper::after{
         width:100vw!important;

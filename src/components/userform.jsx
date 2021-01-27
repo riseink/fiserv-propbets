@@ -111,7 +111,7 @@ class UserForm extends Component {
       player_team_name: "",
       player_hall_of_fame: "",
       player_location: "",
-      player_tally: "0 of 25",
+      player_company: "",
     });
 
     this.setState({

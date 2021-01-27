@@ -34,8 +34,8 @@ class Question20 extends Component {
                 onChange={handleChange}>
                 <FormControlLabel value="Chiefs TD" control={<Radio />} label="Chiefs TD" onChange={handleChange("question20")} />
                 <FormControlLabel value="Chiefs FG" control={<Radio />} label="Chiefs FG" onChange={handleChange("question20")} />
-                <FormControlLabel value="Packers TD" control={<Radio />} label="Packers TD" onChange={handleChange("question20")} />
-                <FormControlLabel value="Packers FG" control={<Radio />} label="Packers FG" onChange={handleChange("question20")} />
+                <FormControlLabel value="Buccaneers TD" control={<Radio />} label="Buccaneers TD" onChange={handleChange("question20")} />
+                <FormControlLabel value="Buccaneers FG" control={<Radio />} label="Buccaneers FG" onChange={handleChange("question20")} />
               </RadioGroup>
               <br />
               <RaisedButton

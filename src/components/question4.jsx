@@ -32,8 +32,8 @@ class Question4 extends Component {
                 id="question4"
                 value={values.question4}
                 onChange={handleChange}>
-                <FormControlLabel value="NFC" control={<Radio />} label="NFC" onChange={handleChange("question4")} />
-                <FormControlLabel value="AFC" control={<Radio />} label="AFC" onChange={handleChange("question4")} />
+                <FormControlLabel value="Buccaneers " control={<Radio />} label="Buccaneers " onChange={handleChange("question4")} />
+                <FormControlLabel value="Chiefs" control={<Radio />} label="Chiefs" onChange={handleChange("question4")} />
               </RadioGroup>
               <br />
               <RaisedButton

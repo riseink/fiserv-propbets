@@ -26,7 +26,7 @@ class Question10 extends Component {
               <a onClick={this.back}><img src='/question_chevron_back.png'></img></a>
             </div>
             <div className="question_container">
-              <h3 className="question">How many times will they show Pat Mahomes' family on the broadcast?</h3>
+              <h3 className="question">How many times will they show Tom Brady's family on the broadcast?</h3>
               <RadioGroup row className="break_row"
                 name="question10"
                 id="question10"
