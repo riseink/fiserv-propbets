@@ -15,14 +15,14 @@ const HomePage = () => (
 
     <div id="overview" className="overview_section">
       <div className="copy_container">
-        <h2>THE ROAD TO GLORY STARTS HERE</h2>
+        <h2>The Road to Glory Starts Here</h2>
         <p>Today, two worlds collide in a soothsaying battle royal. Legends of the gridiron will join forces with fintech superstars in pursuit of eternal pigskin glory.</p>
         <p>If you have the smarts, the savvy and the sweet kiss of lady luck, destiny awaits.</p>
       </div>
     </div>
     <div id="gameplay" className="gameplay_section">
     <div className="gameplay_item flex_end">
-    <h2>THE PLAYBOOK</h2>
+    <h2>The Playbook</h2>
         <p>The objective is simple: Outsmart the competition and leave them in your wake.</p>
         <p>You’ll be given a series of prop bets, or predictions, for the Super Bowl. Your secret weapon? A pro football Hall of Famer at your side.</p>
         <p>Choose wisely and the spoils of victory could be yours.</p>
@@ -33,7 +33,7 @@ const HomePage = () => (
     </div>
     <div className="place_bets_section" id="place_bets">
     <div className="bets_copy">
-        <h2>IT’S GAME TIME!</h2>
+        <h2>It’s Game Time!</h2>
         <p>Ready for action? It’s time to separate the contenders from the pretenders.</p>
       </div>
 

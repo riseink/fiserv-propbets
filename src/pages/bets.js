@@ -13,7 +13,7 @@ const BetsPage = () => (
           <body class='body_bets' />
     </Helmet>
     <div className="bets_copy_container">
-    <h2>CHOOSE LIKE A CHAMPION</h2>
+    <h2>Choose Like a Champion</h2>
     <p>Lock in each pick by hitting continue. You can always go back. Just remember: The play clock is ticking.</p>
     
     </div>

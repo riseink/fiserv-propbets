@@ -303,9 +303,8 @@ h2 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
-    font-size: 1.62671rem;
+    font-size: 2rem;
     line-height: 1.1;
-    text-transform: uppercase;
 }
 
 h3 {
@@ -1061,8 +1060,8 @@ span.team_span {
 .leaderboard_copy h2 {
     color: #f60;
     /* font-weight: 300;
-    font-family: 'Roboto', sans-serif; */
-    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; */
 }
 
 .leaderboard_copy p {
@@ -1119,7 +1118,6 @@ span.team_span {
 }
 .bets_copy_container h2{
     color: #f60;
-    text-transform: uppercase;
 }
 
 .black_wrapper{
