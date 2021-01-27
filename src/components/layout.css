@@ -43,6 +43,14 @@ video {
     display: inline-block;
 }
 
+video {
+  width: 100%;
+  max-height: 80vh;
+}
+.video_bg{
+    background:#000;
+}
+
 audio:not([controls]) {
     display: none;
     height: 0;
@@ -676,6 +684,8 @@ pre tt:after {
         font-size: 100%;
     }
 }
+
+
 
 button svg {
     display: none!important;
