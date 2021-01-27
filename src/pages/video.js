@@ -12,10 +12,9 @@ const VideoPage = () => (
 
     <div id="player-overlay">
   <video controls autoplay="true">
-    <source src="http://www.intersporthub.com/wp-content/uploads/2020/02/19ADIDAS_FNS_FINAL_720_29_FOR_HUB.mp4?id=0" />
+    <source src="https://intersport-assets.s3.amazonaws.com/19ADIDAS_FNS_FINAL_720_29_FOR_HUB.mp4" />
   
   </video>
-  <iframe width="560" title="unique" height="315" src="http://www.intersporthub.com/wp-content/uploads/2020/02/19ADIDAS_FNS_FINAL_720_29_FOR_HUB.mp4?id=0" frameborder="0" allowfullscreen></iframe>
 </div>
   </LayoutAlt>
 )
