@@ -6,6 +6,7 @@ import RaisedButton from "material-ui/RaisedButton";
 
 if (typeof window !== "undefined") {
   var accessKeyValue = localStorage.getItem('FISERV_ACCESS_KEY');
+  console.log( 'input should say ' + accessKeyValue )
 }
 
 class FormUserDetails extends Component {

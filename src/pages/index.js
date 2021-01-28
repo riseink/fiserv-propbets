@@ -3,12 +3,13 @@ import { Link } from "gatsby"
 import Helmet from 'react-helmet'
 
 
-function gateKeeper (event){
+function gateKeeper(event) {
   let detectInput = document.querySelector('#input');
-  if (detectInput.value === '123' || detectInput.value === 'ABC' && typeof window !== "undefined") {
-  console.log("FISERV_ACCESS_KEY " + detectInput.value)
-  localStorage.setItem('FISERV_ACCESS_KEY', detectInput.value);
- 
+  if (detectInput.value === 'Frank_Bisignano' || detectInput.value === 'Chris_Foskett' ||  detectInput.value === 'Steve_Nickolson' ||  detectInput.value === 'Frank_Jules' ||  detectInput.value === 'Robert_DeJong' ||
+  detectInput.value === 'Kate_Jaspon' ||  detectInput.value === 'Mark_Borrecco' ||  detectInput.value === 'John_Ciulla' ||  detectInput.value === 'Larry_Mazza' ||  detectInput.value === 'Chris_Reichert' ||  detectInput.value === 'Carol_Juel'  && typeof window !== "undefined") {
+    console.log("FISERV_ACCESS_KEY " + detectInput.value)
+    localStorage.setItem('FISERV_ACCESS_KEY', detectInput.value);
+
   }
   else {
     event.preventDefault()
