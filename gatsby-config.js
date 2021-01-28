@@ -29,11 +29,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `fiserv prop bets`,
-        short_name: `starter`,
+        name: `fiserv HOF`,
+        short_name: `fiserv`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#f60`,
+        theme_color: `#f60`,
         display: `minimal-ui`,
         icon: `src/images/fiserv-icon.png`, // This path is relative to the root of the site.
       },
