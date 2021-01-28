@@ -686,7 +686,9 @@ pre tt:after {
 }
 
 
-
+.body_submitted .bets_copy_container{
+    display:none;
+}
 button svg {
     display: none!important;
 }
@@ -1136,8 +1138,12 @@ span.team_span {
     justify-content: space-between;
     align-items: center;
 }
-.confirm_bets{
+.confirm_bets, .confirm_final{
     text-align: center;
+}
+
+.confirm_final {
+    margin-top:10vh
 }
 .confirm_container h3.question{
     width:100%
@@ -1158,6 +1164,26 @@ span.team_span {
 }
 
 .confirm_bets input:hover{
+    background: #e55b00;
+}
+
+.confirm_final a{
+    background: #f60;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all .5 sec;
+    border-style: double;
+    border: 7px double #fff;
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.confirm_final a:hover{
     background: #e55b00;
 }
 

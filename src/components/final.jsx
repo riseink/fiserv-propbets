@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { Link } from "gatsby"
 import RaisedButton from "material-ui/RaisedButton";
+import Helmet from 'react-helmet'
 
 class Final extends Component {
   
@@ -11,12 +12,15 @@ class Final extends Component {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-        <div className="question_wrapper confirm_bets">
+        <Helmet>
+          <body class='body_submitted' />
+        </Helmet>
+        <div className="question_wrapper confirm_final">
         <div className="question_container">
 
-          <h3 className="question">Your Bet has entered</h3>
+          <h3 className="question">Your bets have been submitted</h3>
           <p>Review your submission here</p>
-          <Link to="/my_bets"> my bets </Link>
+          <Link to="/my_bets"> My Bets </Link>
      
       </div></div>
   <div className="pad_bottom"></div>      </React.Fragment>
