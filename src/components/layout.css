@@ -1055,7 +1055,7 @@ tbody tr:nth-child(odd) {
 }
 
 span.rank_span {
-    width: 30px;
+    width: 40px;
     text-align: center;
     border-right: 1px solid #f60;
     display: inline-block;
@@ -1065,7 +1065,7 @@ span.rank_span {
 span.team_span {
     text-align: center;
     display: inline-block;
-    width: calc(100% - 39px);
+    width: calc(100% - 49px);
 }
 
 .hof_logo {
