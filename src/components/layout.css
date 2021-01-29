@@ -967,10 +967,24 @@ h3.question {
 }
 
 .body_ledger .fl-table {
-    /* max-width:calc(100vw - 80px);
-  overflow-x: scroll;
-  display: inline-block; */
+    border-spacing: 0px 0;
     position: relative;
+}
+
+.body_ledger .fl-table th {
+    font-size:14px;
+    line-height:16px;
+    position: sticky;
+    top: 0!important;
+    background:black;
+    left:auto!important;
+    z-index: 99!important;
+}
+
+.body_ledger .fl-table td {
+    border-right:none!important;
+    border-bottom:none!important;
+
 }
 
 .body_ledger .fl-table td,
@@ -1418,7 +1432,7 @@ span.team_span {
     width: 80vw;
     margin: 0 auto 0 auto;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 20vh;
 }
 
 .overview_section {

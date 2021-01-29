@@ -107,7 +107,7 @@ class UserForm extends Component {
       question25: this.state.question25,
       question26: this.state.question26,
       score: 0,
-      rank: 0,
+      rank: 1,
       player_team_name: "",
       player_hall_of_fame: "",
       player_location: "",
