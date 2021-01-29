@@ -39,7 +39,7 @@ class Ledger extends React.Component {
               <th>Question</th>
               {players.map((player) => (
                 <th>
-                  {player.player_first_name} {player.player_last_name}
+                  {player.accessKey}
                 </th>
               ))}
             </tr>
