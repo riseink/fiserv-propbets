@@ -12,7 +12,7 @@ const VideoPage = () => (
 
     <div id="player-overlay">
   <video controls autoplay="true">
-    <source src="https://intersport-assets.s3.amazonaws.com/19ADIDAS_FNS_FINAL_720_29_FOR_HUB.mp4" />
+    <source src="https://intersport-assets.s3.amazonaws.com/21Fiserv_Prop_Bets_v2.mp4" />
   
   </video>
 </div>
