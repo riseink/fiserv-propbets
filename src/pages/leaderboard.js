@@ -15,7 +15,7 @@ class Leaderboard extends React.Component {
 
   componentDidMount() {
     db.collection("players")
-      .orderBy("score",  "desc")
+      .orderBy("rank",  "asc")
       .get()
       .then((querySnapshot) => {
         const data = querySnapshot.docs.map((doc) => doc.data());
